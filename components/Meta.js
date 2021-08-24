@@ -1,9 +1,11 @@
 import Head from 'next/head'
+import Logo from '../public/images/logo.png'
 
-const Meta = ({ title, keywords, description }) => {
+const Meta = ({ title, keywords, description, image }) => {
     return (
         <Head>
             <meta name='viewport' content='width=device-width, initial-scale=1' />
+            <meta property="og:image" content={image} />
             <meta name='keywords' content={keywords} />
             <meta name='description' content={description} />
             <meta charSet='utf-8' />
@@ -15,6 +17,7 @@ const Meta = ({ title, keywords, description }) => {
 
 Meta.defaultProps = {
     title: 'Himapala Unesa',
+    image: {Logo},
     keywords: 'mapala, unesa, himapala, river guide, rafting, ekspedisi',
     description: 'Himpunan Mahasiswa Pencinta Alam Universitas Negeri Surabaya.',
 }
