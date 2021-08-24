@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Logo from '../public/images/logo.png'
+import Logo from '../public/images/meta-logo.png'
 
 const Meta = ({ title, keywords, description, image }) => {
     return (
