@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Logo from '../public/images/meta-logo.png'
 
 const Meta = ({ title, keywords, description, image }) => {
     return (
@@ -17,7 +16,7 @@ const Meta = ({ title, keywords, description, image }) => {
 
 Meta.defaultProps = {
     title: 'Himapala Unesa',
-    image: {Logo},
+    image: '/images/meta-logo.png',
     keywords: 'mapala, unesa, himapala, river guide, rafting, ekspedisi',
     description: 'Himpunan Mahasiswa Pencinta Alam Universitas Negeri Surabaya.',
 }
