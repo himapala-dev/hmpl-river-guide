@@ -1,0 +1,136 @@
+@import "../variables";
+@import "../mixins";
+
+.logo {
+  display: inline-block;
+
+  a {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+
+.menu {
+  height: 0;
+  overflow: hidden;
+  transition: height 300ms linear;
+
+  @include breakpoint(md) {
+    height: 100%;
+  }
+
+  &.active {
+    height: 225px;
+  }
+  ul {
+    list-style-type: none;
+    display: none;
+    transition: height 300ms linear;
+
+    @include breakpoint(md) {
+      display: flex;
+      margin-right: 25px;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+
+    &.active {
+      display: block;
+    }
+
+    li {
+      text-align: center;
+      margin: 25px auto;
+
+      @include breakpoint(md) {
+        margin: auto 15px;
+      }
+
+      &:not(:last-child) {
+        a {
+          position: relative;
+          text-align: center;
+          font-size: 1.125rem;
+          font-family: $primaryFont;
+          font-weight: 700;
+
+          &::after {
+            background: none repeat scroll 0 0 transparent;
+            bottom: -10px;
+            content: "";
+            display: block;
+            height: 2px;
+            left: 50%;
+            position: absolute;
+            background: white;
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            width: 0;
+          }
+
+          &:hover::after,
+          &.choosen::after {
+            width: 100%;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.toggle {
+  width: 40px;
+  height: 40px;
+  right: 15px;
+  top: 30px;
+  background-color: transparent;
+  position: absolute;
+  display: block;
+
+  @include breakpoint(md) {
+    display: none;
+  }
+
+  .toggler {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      span:nth-of-type(1),
+      span:nth-of-type(2),
+      span:nth-of-type(3) {
+        background-color: $whiteHover;
+      }
+    }
+
+    &.active {
+      span:nth-of-type(1) {
+        transform: rotate3d(0, 0, 1, 45deg);
+        transition: all 0.4s;
+        margin: 0;
+      }
+      span:nth-of-type(2) {
+        display: none;
+      }
+      span:nth-of-type(3) {
+        transform: rotate3d(0, 0, 1, -45deg);
+        transition: all 0.4s;
+        margin: 0;
+      }
+    }
+
+    span {
+      width: 98%;
+      height: 1px;
+      display: block;
+      background-color: white;
+      margin: 10px 0;
+      transition: all 0.4s;
+    }
+  }
+}
