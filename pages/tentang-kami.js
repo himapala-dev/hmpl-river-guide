@@ -1,6 +1,6 @@
 import React from 'react'
 
-const TentangKami = () => {
+export default function TentangKami() {
     return (
         <div>
             Halaman tentang kami
@@ -8,4 +8,4 @@ const TentangKami = () => {
     )
 }
 
-export default TentangKami
+TentangKami.layout = "docs"

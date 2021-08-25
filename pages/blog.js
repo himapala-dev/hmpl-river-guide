@@ -1,11 +1,13 @@
+import Navbar from "../components/Navbar";
 
 
-const Blog = () => {
+export default function Blog() {
     return (
-        <div>
-            Halaman Blog
-        </div>
+        <>
+            <Navbar />
+            <h1>Halaman Blog</h1>
+        </>
     )
 }
 
-export default Blog
+Blog.layout = "default";

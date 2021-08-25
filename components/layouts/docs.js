@@ -6,15 +6,13 @@ import SideNav from "../SideNav"
 const Documentation = (props) => {
     return (
         <>
-        <Meta />
-        <div>
+            <Meta />
             <Navbar />
             <div>
                 <SideNav />
                 {props.children}
             </div>
             <Footer />
-        </div>
         </>
     )
 }
