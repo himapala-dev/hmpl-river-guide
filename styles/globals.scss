@@ -224,12 +224,13 @@ footer {
     @include breakpoint(md) {
       gap: 50px;
       text-align: left;
-    }
 
-    &.four {
-      div {
-        &:last-child {
-          text-align: center;
+      &.four {
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        div {
+          &:last-child {
+            text-align: center;
+          }
         }
       }
     }
