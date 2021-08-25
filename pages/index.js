@@ -1,8 +1,8 @@
 import Hero from '../components/Hero';
 import Meta from '../components/Meta'
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 import styles from '../styles/Home.module.scss'
-
 
 export default function Home() {
   return (
@@ -21,16 +21,44 @@ export default function Home() {
       </div>
 
       {/* Division Card */}
+      <section>
+        Division
+      </section>
 
       {/* Pengurus */}
+      <section>
+        Pengurus
+      </section>
+      <section>
+        Pengurus
+      </section>
+      <section>
+        Pengurus
+      </section>
+      <section>
+        Pengurus
+      </section>
+      <section>
+        Pengurus
+      </section>
+      <section>
+        Pengurus
+      </section>
 
       {/* 100KM section */}
+      <section>
+        1000km
+      </section>
 
       {/* Blog Card */}
+      <section>
+        blog
+      </section>
 
       {/* Kontak */}
-
-      {/* Footer */}
+      <section>
+        kontak
+      </section>
     </>
   )
 }

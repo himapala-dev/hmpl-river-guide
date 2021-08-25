@@ -1,10 +1,107 @@
-import React from 'react'
+import Image from 'next/image'
+import Link from 'next/link'
+import SocmedLists from './SocmedLists'
 
 function Footer() {
     return (
-        <div>
-            
-        </div>
+        <>
+            <footer>
+                <div className="container">
+                    <div className="grid-col four">
+                        <div>
+                            <h1>Himapala Unesa</h1>
+                            <p>Sekretariat Himapala Unesa, Gedung P7, Kampus Lidah Wetan
+                                Universitas Negeri Surabaya
+                                Lakarsantri, Surabaya<br /><br />
+
+                                http://himapala.unesa.ac.id<br />
+                                hmpl.unesa@gmail.com</p>
+                        </div>
+                        <div>
+                            <h4>Tentang Kami</h4>
+                            <ul>
+                                <li>
+                                    <Link href='/tentang-kami#sejarah'>
+                                        <a>Sejarah</a>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href='/tentang-kami#pengurus'>
+                                        <a>Pengurus</a>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href='/tentang-kami#rekamjejak'>
+                                        <a>Rekam Jejak</a>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href='/tentang-kami#kontak'>
+                                        <a>Kontak Kami</a>
+                                    </Link>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4>Halaman</h4>
+                            <ul>
+                                <li>
+                                    <Link href='/tentang-kami#syarat'>
+                                        <a>Syarat dan Ketentuan</a>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href='/tentang-kami#privasi'>
+                                        <a>Aturan Privasi</a>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href='/tentang-kami#disclaimer'>
+                                        <a>Disclaimer</a>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href='/administrator'>
+                                        <a>Administrator</a>
+                                    </Link>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <Image
+                                src="/images/logo.png"
+                                alt="hmpl-logo"
+                                width={143}
+                                height={175}
+                            />
+                        </div>
+                    </div>
+                    <div className="grid-col two">
+                        <div>
+                            <SocmedLists
+                                facebook="https://www.facebook.com/hmpl.unesa/"
+                                youtube="https://www.youtube.com/c/HimapalaUnesa"
+                                instagram="https://www.instagram.com/himapala.unesa/"
+                                twitter="https://twitter.com/hmpl_unesa"
+                                linkedin="https://www.linkedin.com/company/himapala-unesa/"
+                            />
+                        </div>
+                        <div>
+                            <Link href='#nav'>
+                                <a>
+                                    <Image
+                                        src="/icons/chevron-double-up.svg"
+                                        alt="chev-up"
+                                        width={35}
+                                        height={35}
+                                    />
+                                </a>
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </>
     )
 }
 

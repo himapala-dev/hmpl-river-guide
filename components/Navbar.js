@@ -10,13 +10,14 @@ function Navbar() {
     const onClick = () => setIsActive(!isActive);
     const router = useRouter();
     return (
-        <nav>
+        <nav id="nav">
             <div className="container">
                 <div className={styles.logo}>
                     <Link href="/">
                         <a>Himapala Unesa</a>
                     </Link>
                 </div>
+
                 <div className={styles.toggle} onClick={onClick}>
                     <button className={`${styles.toggler} ${isActive ? styles.active : ""}`} ref={toggleRef}>
                         <span />
@@ -24,6 +25,7 @@ function Navbar() {
                         <span />
                     </button>
                 </div>
+
                 <div className={`${styles.menu} ${isActive ? styles.active : ""}`} ref={toggleRef}>
                     <ul className={`${isActive ? styles.active : ""}`} ref={toggleRef}>
                         <li>
