@@ -155,14 +155,18 @@ a {
   text-decoration: none;
 }
 
+section {
+  margin: 50px 0;
+}
+
 nav {
   position: sticky;
   color: white;
-  width: 100%;
-  padding-top: 35px;
+  width: 100vw;
+  padding: 15px 0;
 
   @include breakpoint(md) {
-    padding-top: 50px;
+    padding: 25px 0;
 
     .container {
       display: flex;
@@ -175,6 +179,8 @@ nav {
 .container {
   padding-left: 15px;
   padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
 
   @include breakpoint(md) {
     padding-left: 35px;
@@ -199,6 +205,8 @@ button {
   outline: none;
 
   &.btn-primary {
+    color: $primaryColor;
+
     &:hover {
       background-color: $primaryColor;
       color: white;

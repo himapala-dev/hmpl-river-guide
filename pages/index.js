@@ -1,37 +1,37 @@
+import Hero from '../components/Hero';
 import Meta from '../components/Meta'
 import Navbar from '../components/Navbar';
 import styles from '../styles/Home.module.scss'
-import Image from 'next/image'
+
 
 export default function Home() {
   return (
-    <div className={styles.topWrapper}>
-      <Navbar />
-      <section id="hero" className={styles.hero}>
-        <div className="container">
-          <div className={styles.heroInside}>
+    <>
+      <div className={styles.topWrapper}>
+        <Navbar />
 
-            <div className={styles.heroText}>
-              <h1>Petualangan Itu Berharga</h1>
-              <p>lorem</p>
-            </div>
+        <Hero
+          title="Petualangan Berharga"
+          summary="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+          image={true}
+          link="/tentang-kami"
+          button="Tentang Kami"
+          socmed={true}
+        />
+      </div>
 
-            <div className={styles.heroImg}>
-              <Image
-                src="/images/logo.png"
-                alt="hmpl-logo"
-                width={287}
-                height={350}
-              />
+      {/* Division Card */}
 
-              <div className={styles.heroSoc}>
+      {/* Pengurus */}
 
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
+      {/* 100KM section */}
+
+      {/* Blog Card */}
+
+      {/* Kontak */}
+
+      {/* Footer */}
+    </>
   )
 }
 

@@ -8,6 +8,10 @@
     font-size: 2rem;
     font-weight: bold;
     text-transform: uppercase;
+
+    @media screen and (max-width: 300px) {
+      font-size: 1.5rem;
+    }
   }
 }
 
@@ -30,13 +34,14 @@
 
     @include breakpoint(md) {
       display: flex;
-      margin-right: 25px;
+      margin-left: 25px;
       flex-direction: row;
       justify-content: flex-end;
     }
 
     &.active {
       display: block;
+      padding-left: 0;
     }
 
     li {
@@ -83,7 +88,7 @@
   width: 40px;
   height: 40px;
   right: 15px;
-  top: 30px;
+  top: 10px;
   background-color: transparent;
   position: absolute;
   display: block;
@@ -126,7 +131,7 @@
 
     span {
       width: 98%;
-      height: 1px;
+      height: 2px;
       display: block;
       background-color: white;
       margin: 10px 0;
