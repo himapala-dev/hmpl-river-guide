@@ -137,6 +137,7 @@ body {
   min-height: 100vh;
   font-family: $primaryFont;
   font-size: 14px;
+  scroll-behavior: smooth;
 
   @include breakpoint(md) {
     font-size: 16px;
@@ -159,7 +160,6 @@ a {
 
 section {
   margin: 50px 0;
-  max-width: 100vw;
 }
 
 .bg-blue {

@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import ScrollButton from './BackToTop';
 import SocmedLists from './SocmedLists'
 
 function Footer() {
@@ -87,16 +88,7 @@ function Footer() {
                             />
                         </div>
                         <div>
-                            <Link href='#top'>
-                                <a>
-                                    <Image
-                                        src="/icons/chevron-double-up.svg"
-                                        alt="chev-up"
-                                        width={35}
-                                        height={35}
-                                    />
-                                </a>
-                            </Link>
+                            <ScrollButton scrollStepInPx='50' delayInMs='16.66' />
                         </div>
                     </div>
                 </div>
