@@ -1,16 +1,22 @@
-import { useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import styles from '../styles/components/Navbar.module.scss'
 import Link from 'next/link'
 import { OutsideClick } from './OutsideClick';
 import { useRouter } from 'next/dist/client/router';
+import useScrollPosition from './UseScrollPosition';
 
 function Navbar() {
     const toggleRef = useRef(null);
     const [isActive, setIsActive] = OutsideClick(toggleRef, false);
+    const scrollPos = useScrollPosition();
+    const scrollHeight = scrollPos;
     const onClick = () => setIsActive(!isActive);
     const router = useRouter();
+
+    console.log(scrollHeight)
+
     return (
-        <nav id="nav">
+        <nav className={`${router.pathname == "/" ? "" : "bg-blue" && router.pathname == "/blog" ? "" : "bg-blue"} ${scrollHeight > 300 ? "bg-blue" : ""}`}>
             <div className="container">
                 <div className={styles.logo}>
                     <Link href="/">

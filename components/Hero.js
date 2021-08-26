@@ -6,7 +6,7 @@ import SocmedLists from './SocmedLists'
 function Hero({ title, summary, image, link, button, socmed }) {
     return (
         <>
-            <section id="hero" className={styles.hero}>
+            <section id="top" className={styles.hero}>
                 <div className="container">
                     <div className={styles.heroInside}>
 
@@ -24,14 +24,16 @@ function Hero({ title, summary, image, link, button, socmed }) {
                         </div>
 
                         <div>
-                            <div className={styles.heroImg}>
+                            {image ? (
+                                <div className={styles.heroImg}>
                                 <Image
-                                    src={`${image == true ? '/images/logo.png' : ""}`}
+                                    src="/images/logo.png"
                                     alt="hmpl-logo"
                                     width={287}
                                     height={350}
                                 />
                             </div>
+                            ) : ""}
 
                             <div className={styles.heroSoc}>{socmed == true ? (
                                 <SocmedLists

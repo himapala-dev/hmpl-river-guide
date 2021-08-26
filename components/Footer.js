@@ -87,7 +87,7 @@ function Footer() {
                             />
                         </div>
                         <div>
-                            <Link href='#nav'>
+                            <Link href='#top'>
                                 <a>
                                     <Image
                                         src="/icons/chevron-double-up.svg"

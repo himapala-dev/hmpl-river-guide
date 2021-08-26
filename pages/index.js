@@ -7,9 +7,8 @@ import styles from '../styles/Home.module.scss'
 export default function Home() {
   return (
     <>
-      <div className={styles.topWrapper}>
-        <Navbar />
-
+    <div className="topWrapper"></div>
+      <Navbar />
         <Hero
           title="Petualangan Berharga"
           summary="Menumbuhkan sikap ramah tamah, bela lingkungan, olah raga alam bebas, dan minat masyarakat untuk menumbuhkan semangat hidup yang penuh mengisi jiwa pemuda."
@@ -18,7 +17,6 @@ export default function Home() {
           button="Tentang Kami"
           socmed={true}
         />
-      </div>
 
       {/* Division Card */}
       <section>
