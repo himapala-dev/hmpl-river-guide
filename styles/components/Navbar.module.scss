@@ -16,11 +16,21 @@
 }
 
 .menu {
+  background-color: $primaryColor;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  z-index: 100;
+  width: 100%;
   height: 0;
   transition: height 300ms linear;
 
   @include breakpoint(md) {
     height: 100%;
+    position: relative;
+    width: 600px;
+    top: 0;
+    background-color: transparent;
   }
 
   &.active {
