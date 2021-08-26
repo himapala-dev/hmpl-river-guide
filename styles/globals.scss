@@ -125,21 +125,18 @@
 
 * {
   box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
+  outline: none;
+  border: 0;
 }
 
 html,
 body {
   padding: 0;
   margin: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  min-height: 100vh;
   font-family: $primaryFont;
   font-size: 14px;
-  overflow-x: hidden;
 
   @include breakpoint(md) {
     font-size: 16px;
@@ -162,10 +159,11 @@ a {
 
 section {
   margin: 50px 0;
+  max-width: 100vw;
 }
 
 .bg-blue {
-  background-color: $primaryColor
+  background-color: $primaryColor;
 }
 
 // Top Wrapper Hero
@@ -179,6 +177,7 @@ section {
     position: absolute;
     top: 0;
     left: 0;
+    right: 0;
     width: 100%;
     height: 525px;
     background-image: url(/images/hero-banner.jpg);
@@ -191,15 +190,10 @@ section {
     }
 
     @include breakpoint(md) {
-      height: 675px;
-    }
-
-    @include breakpoint(xl) {
-      height: 100vh;
+      height: 648px;
     }
   }
 }
-
 
 // Navbar
 nav {
@@ -207,8 +201,13 @@ nav {
   top: 0;
   color: white;
   z-index: 100;
-  width: 100vw;
+  width: 100%;
   padding: 15px 0;
+
+  &.bg-blue {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    transition: all 0.4s;
+  }
 
   @include breakpoint(md) {
     padding: 25px 0;
@@ -232,7 +231,7 @@ footer {
   left: 0;
   right: 0;
   padding: 35px 0;
-  width: 100vw;
+  width: 100%;
   background-color: $primaryColor;
 
   ul {

@@ -7,16 +7,16 @@ import styles from '../styles/Home.module.scss'
 export default function Home() {
   return (
     <>
-    <div className="topWrapper"></div>
+      <div className="topWrapper"></div>
       <Navbar />
-        <Hero
-          title="Petualangan Berharga"
-          summary="Menumbuhkan sikap ramah tamah, bela lingkungan, olah raga alam bebas, dan minat masyarakat untuk menumbuhkan semangat hidup yang penuh mengisi jiwa pemuda."
-          image={true}
-          link="/tentang-kami"
-          button="Tentang Kami"
-          socmed={true}
-        />
+      <Hero
+        title="Petualangan Berharga"
+        summary="Menumbuhkan sikap ramah tamah, bela lingkungan, olah raga alam bebas, dan minat masyarakat untuk menumbuhkan semangat hidup yang penuh mengisi jiwa pemuda."
+        image={true}
+        link="/tentang-kami"
+        button="Tentang Kami"
+        socmed={true}
+      />
 
       {/* Division Card */}
       <section>

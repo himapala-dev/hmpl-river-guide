@@ -8,15 +8,12 @@ import useScrollPosition from './UseScrollPosition';
 function Navbar() {
     const toggleRef = useRef(null);
     const [isActive, setIsActive] = OutsideClick(toggleRef, false);
-    const scrollPos = useScrollPosition();
-    const scrollHeight = scrollPos;
+    const scrollPosition = useScrollPosition();
     const onClick = () => setIsActive(!isActive);
     const router = useRouter();
 
-    console.log(scrollHeight)
-
     return (
-        <nav className={`${router.pathname == "/" ? "" : "bg-blue" && router.pathname == "/blog" ? "" : "bg-blue"} ${scrollHeight > 300 ? "bg-blue" : ""}`}>
+        <nav className={`${router.pathname == "/" ? "" : "bg-blue" && router.pathname == "/blog" ? "" : "bg-blue"} ${scrollPosition > 50 ? "bg-blue" : ""}`}>
             <div className="container">
                 <div className={styles.logo}>
                     <Link href="/">

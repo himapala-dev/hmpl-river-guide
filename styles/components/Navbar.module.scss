@@ -17,7 +17,6 @@
 
 .menu {
   height: 0;
-  overflow: hidden;
   transition: height 300ms linear;
 
   @include breakpoint(md) {
