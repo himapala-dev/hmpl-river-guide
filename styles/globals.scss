@@ -1,5 +1,6 @@
 @import "variables";
 @import "mixins";
+@import "./utils";
 
 @font-face {
   font-family: "Roboto";
@@ -147,6 +148,16 @@ body {
 h1 {
   font-size: 3rem;
   color: $primaryColor;
+
+  &.with-line {
+    &::before {
+      content: "";
+      border-top: 2px solid black;
+      width: 25%;
+      margin: 10px 0;
+      transform: translateY(-1rem);
+    }
+  }
 }
 
 :is(p, span, ul, li) {
@@ -156,43 +167,11 @@ h1 {
 a {
   color: inherit;
   text-decoration: none;
+  cursor: pointer;
 }
 
 section {
-  margin: 50px 0;
-}
-
-.bg-blue {
-  background-color: $primaryColor;
-}
-
-// Top Wrapper Hero
-.topWrapper {
-  position: relative;
-}
-
-.topWrapper {
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 525px;
-    background-image: url(/images/hero-banner.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: brightness(50%);
-
-    @media screen and (max-width: 300px) {
-      height: 575px;
-    }
-
-    @include breakpoint(md) {
-      height: 648px;
-    }
-  }
+  margin: 50px 0 150px;
 }
 
 // Navbar
@@ -309,41 +288,6 @@ footer {
   }
 }
 
-.grid-col {
-  display: grid;
-  grid-template-columns: auto;
-
-  &.two {
-    @include breakpoint(md) {
-      grid-template-columns: 1fr 1fr;
-    }
-  }
-
-  &.four {
-    @include breakpoint(md) {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-  }
-}
-
-// Container
-.container {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-right: auto;
-  margin-left: auto;
-
-  @include breakpoint(md) {
-    padding-left: 35px;
-    padding-right: 35px;
-  }
-
-  @include breakpoint(lg) {
-    padding-left: 75px;
-    padding-right: 75px;
-  }
-}
-
 button {
   width: clamp(125px, 60vw, 150px);
   height: clamp(35px, 60vh, 50px);
@@ -360,6 +304,15 @@ button {
 
     &:hover {
       background-color: $whiteHover;
+    }
+  }
+
+  &.btn-secondary {
+    color: white;
+    background-color: $primaryColor;
+
+    &:hover {
+      background-color: $primaryHover;
     }
   }
 }

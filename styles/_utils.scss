@@ -1,0 +1,113 @@
+.bg-blue {
+  background-color: $primaryColor;
+}
+
+// Top Wrapper Hero
+.topWrapper {
+  position: relative;
+}
+
+@import "./mixins";
+@import "./variables";
+
+.topWrapper {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 525px;
+    background-image: url(/images/hero-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(50%);
+
+    @media screen and (max-width: 300px) {
+      height: 575px;
+    }
+
+    @include breakpoint(md) {
+      height: 648px;
+    }
+  }
+}
+
+.grid-col {
+  display: grid;
+  grid-template-columns: auto;
+
+  &.two {
+    @include breakpoint(md) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  &.four {
+    @include breakpoint(md) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+}
+
+// Container
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include breakpoint(md) {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  @include breakpoint(lg) {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+}
+
+.heading-line {
+  max-width: fit-content;
+  margin-top: 75px;
+
+  h1 {
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin: 0;
+    max-width: 720px;
+  }
+
+  &.center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    .line {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+.line {
+  width: 25%;
+  border-bottom: 10px solid #a4a4a4;
+  border-radius: 20px;
+}
+
+#kontak {
+  .grid-col {
+    align-items: center;
+    gap: 20px;
+    &.two {
+      @include breakpoint(md) {
+        grid-template-columns: 2fr auto;
+      }
+    }
+  }
+}

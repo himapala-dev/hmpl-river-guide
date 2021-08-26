@@ -6,7 +6,7 @@ import SocmedLists from './SocmedLists'
 function Hero({ title, summary, image, link, button, socmed }) {
     return (
         <>
-            <section id="top" className={styles.hero}>
+            <section id="hero" className={styles.hero}>
                 <div className="container">
                     <div className={styles.heroInside}>
 
