@@ -7,7 +7,7 @@ const useScrollPosition = () => {
   // On Scroll
   useEffect(() => {
     const handleScroll = () => {
-      setScrollY(window.scrollY);
+      setScrollPos(window.scrollY);
     };
 
     // just trigger this so that the initial state 
