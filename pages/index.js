@@ -6,6 +6,7 @@ import styles from '../styles/Home.module.scss';
 import Image from 'next/image'
 import Link from 'next/link'
 import DivisionCard from '../components/DivisionCard';
+// import Pagination from '../components/Pagination';
 // import Carousel from '../components/Carousel';
 
 export default function Home() {
@@ -43,13 +44,14 @@ export default function Home() {
             <h1>Pengurus</h1>
           </div>
           {/* <Carousel /> */}
+          {/* <Pagination /> */}
         </div>
       </section>
 
       {/* 100KM section */}
       <section id="xpdc">
         <div className="videoWrapper">
-          <video autoPlay muted loop id="myVideo">
+          <video autoPlay muted loop id="myVideo" loading="lazy" preload="auto" playsinline>
             <source src="/videos/1000km.mp4" type="video/mp4" />
           </video>
         </div>
