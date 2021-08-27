@@ -30,23 +30,25 @@ function DivisionCard() {
         <>
             <div className={styles.divisionLists}>
                 {divisionData.map(e => (
-                    <div key={e.name} className={`${e.title == "Arung Jeram" ? styles.cardDivision : styles.raftingCard}`}>
-                        <div className={styles.cardThumbnail}>
-                            <div className={styles.cardText}>
-                                <div className={styles.textInside}>
-                                    <h4>{e.title}</h4>
-                                    <p>{e.summary}</p>
-                                    {e.title == "Arung Jeram" ? (
-                                        <Link href="/river-guide">
-                                            <a>
-                                                <button className="btn-primary">RIVER GUIDE</button>
-                                            </a>
-                                        </Link>
-                                    ) : ""}
+                    <React.Fragment key={e.name}>
+                        <div className={`${e.title == "Arung Jeram" ? styles.cardDivision : styles.raftingCard}`}>
+                            <div className={styles.cardThumbnail}>
+                                <div className={styles.cardText}>
+                                    <div className={styles.textInside}>
+                                        <h4>{e.title}</h4>
+                                        <p>{e.summary}</p>
+                                        {e.title == "Arung Jeram" ? (
+                                            <Link href="/river-guide">
+                                                <a>
+                                                    <button className="btn-primary">RIVER GUIDE</button>
+                                                </a>
+                                            </Link>
+                                        ) : ""}
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </React.Fragment>
                 ))}
             </div>
         </>

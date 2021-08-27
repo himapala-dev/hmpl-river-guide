@@ -72,7 +72,7 @@
 
       .cardThumbnail {
         &::before {
-          background-image: url("https://picsum.photos/seed/picsum/200/300");
+          background-image: url("/images/hero-banner.jpg");
         }
       }
 
@@ -87,7 +87,7 @@
       grid-area: gh;
       .cardThumbnail {
         &::before {
-          background-image: url("https://picsum.photos/seed/picsum/200/300");
+          background-image: url("/images/gh.jpg");
         }
       }
     }
@@ -95,7 +95,7 @@
       grid-area: rc;
       .cardThumbnail {
         &::before {
-          background-image: url("https://picsum.photos/seed/picsum/200/300");
+          background-image: url("/images/rc.jpg");
         }
       }
     }
@@ -103,7 +103,7 @@
       grid-area: caving;
       .cardThumbnail {
         &::before {
-          background-image: url("https://picsum.photos/seed/picsum/200/300");
+          background-image: url("/images/caving.jpg");
         }
       }
     }
@@ -111,7 +111,7 @@
       grid-area: selam;
       .cardThumbnail {
         &::before {
-          background-image: url("https://picsum.photos/seed/picsum/200/300");
+          background-image: url("/images/diving.jpg");
         }
       }
     }
