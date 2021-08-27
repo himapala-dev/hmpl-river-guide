@@ -21,7 +21,7 @@ const divisionData = [{
 },
 {
     title: "Selam",
-    summary: "Sedalam hati laut, gemuruh luas samudera."
+    summary: "Sedalam hati laut, diam tak berbatas"
 },
 ]
 
@@ -29,8 +29,8 @@ function DivisionCard() {
     return (
         <>
             <div className={styles.divisionLists}>
-                {divisionData.map(e => (
-                    <React.Fragment key={e.name}>
+                {divisionData.map((e, i) => (
+                    <React.Fragment key={i}>
                         <div className={`${e.title == "Arung Jeram" ? styles.cardDivision : styles.raftingCard}`}>
                             <div className={styles.cardThumbnail}>
                                 <div className={styles.cardText}>

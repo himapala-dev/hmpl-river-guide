@@ -51,7 +51,7 @@ export default function Home() {
       {/* 100KM section */}
       <section id="xpdc">
         <div className="videoWrapper">
-          <video autoPlay muted loop id="myVideo" loading="lazy" preload="auto" playsinline>
+          <video autoPlay muted loop id="myVideo" loading="lazy" preload="auto" playsInline>
             <source src="/videos/1000km.mp4" type="video/mp4" />
           </video>
         </div>
