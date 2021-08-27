@@ -44,7 +44,6 @@
         filter: brightness(50%);
       }
       &:hover {
-        transform: scale(0.9);
         transition: all .5s;
 
         @include breakpoint(md) {

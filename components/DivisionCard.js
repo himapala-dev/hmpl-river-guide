@@ -5,28 +5,23 @@ import Image from 'next/image'
 
 const divisionData = [{
     title: "Arung Jeram",
-    summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus sit tristique lectus amet.",
-    image: "https://picsum.photos/seed/picsum/200/300"
+    summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus sit tristique lectus amet."
 },
 {
     title: "Gunung Hutan",
-    summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus sit tristique lectus amet.",
-    image: "https://picsum.photos/seed/picsum/200/300"
+    summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus sit tristique lectus amet."
 },
 {
     title: "Panjat Tebing",
-    summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus sit tristique lectus amet.",
-    image: "https://picsum.photos/200/300"
+    summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus sit tristique lectus amet."
 },
 {
     title: "Susur Gua",
-    summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus sit tristique lectus amet.",
-    image: "https://picsum.photos/seed/picsum/200/300"
+    summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus sit tristique lectus amet."
 },
 {
     title: "Selam",
-    summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus sit tristique lectus amet.",
-    image: "https://picsum.photos/seed/picsum/200/300"
+    summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus sit tristique lectus amet."
 },
 ]
 
