@@ -9,6 +9,8 @@ module.exports = {
   images: {
     domains: [
       "picsum.photos",
+      "i.postimg.cc",
+      "www.itl.cat"
     ],
   },
 }

@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const divisionData = [{
     title: "Arung Jeram",
-    summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus sit tristique lectus amet."
+    summary: "Siapkan pengarunganmu. Tantang jerammu!"
 },
 {
     title: "Gunung Hutan",
@@ -13,11 +13,11 @@ const divisionData = [{
 },
 {
     title: "Panjat Tebing",
-    summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus sit tristique lectus amet."
+    summary: "Berkawan kepal karst dan andesit."
 },
 {
     title: "Susur Gua",
-    summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus sit tristique lectus amet."
+    summary: "Merayap meyelami zona gelap abadi."
 },
 {
     title: "Selam",

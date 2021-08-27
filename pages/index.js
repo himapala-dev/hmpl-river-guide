@@ -6,6 +6,7 @@ import styles from '../styles/Home.module.scss';
 import Image from 'next/image'
 import Link from 'next/link'
 import DivisionCard from '../components/DivisionCard';
+// import Carousel from '../components/Carousel';
 
 export default function Home() {
   return (
@@ -42,6 +43,7 @@ export default function Home() {
             <div className="line"></div>
             <h1>Pengurus</h1>
           </div>
+          {/* <Carousel /> */}
         </div>
       </section>
 
