@@ -59,6 +59,11 @@
       text-align: center;
       margin: 25px auto;
 
+      button {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
       @include breakpoint(md) {
         margin: auto 15px;
       }

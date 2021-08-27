@@ -148,16 +148,10 @@ body {
 h1 {
   font-size: 3rem;
   color: $primaryColor;
+}
 
-  &.with-line {
-    &::before {
-      content: "";
-      border-top: 2px solid black;
-      width: 25%;
-      margin: 10px 0;
-      transform: translateY(-1rem);
-    }
-  }
+h4 {
+  font-size: 1.5rem;
 }
 
 :is(p, span, ul, li) {
@@ -293,7 +287,7 @@ footer {
 }
 
 button {
-  width: clamp(125px, 60vw, 150px);
+  width: clamp(125px, 60vw, auto);
   height: clamp(35px, 60vh, 50px);
   border-radius: 20px;
   font-size: 1.125rem;
@@ -305,6 +299,11 @@ button {
 
   &.btn-primary {
     color: $primaryColor;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 0 15px;
 
     &:hover {
       background-color: $whiteHover;
@@ -314,6 +313,16 @@ button {
   &.btn-secondary {
     color: white;
     background-color: $primaryColor;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 0 15px;
+
+    img {
+      filter: $whiteFilter;
+      margin: 0 15px;
+    }
 
     &:hover {
       background-color: $primaryHover;

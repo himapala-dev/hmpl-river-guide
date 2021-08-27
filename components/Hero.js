@@ -3,10 +3,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 import SocmedLists from './SocmedLists'
 
-function Hero({ title, summary, image, link, button, socmed }) {
+function Hero({ id, title, summary, image, link, button, socmed }) {
     return (
         <>
-            <section id="hero" className={styles.hero}>
+            <section id={id} className={styles.hero}>
                 <div className="container">
                     <div className={styles.heroInside}>
 

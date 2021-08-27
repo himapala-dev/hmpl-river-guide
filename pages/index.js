@@ -2,7 +2,10 @@ import Hero from '../components/Hero';
 import Meta from '../components/Meta'
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import styles from '../styles/Home.module.scss'
+import styles from '../styles/Home.module.scss';
+import Image from 'next/image'
+import Link from 'next/link'
+import DivisionCard from '../components/DivisionCard';
 
 export default function Home() {
   return (
@@ -10,6 +13,7 @@ export default function Home() {
       <div className="topWrapper"></div>
       <Navbar />
       <Hero
+        id="hero-home"
         title="Petualangan Berharga"
         summary="Menumbuhkan sikap ramah tamah, bela lingkungan, olah raga alam bebas, dan minat masyarakat untuk menumbuhkan semangat hidup yang penuh mengisi jiwa pemuda."
         image={true}
@@ -27,6 +31,7 @@ export default function Home() {
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus sit tristique lectus amet. Sollicitudin posuere neque, non semper pharetra. Posuere
               pellentesque velit eget diam in facilisis eget sed pretium. Proin in vitae non orci feugiat leo auctor.</p>
           </div>
+          <DivisionCard />
         </div>
       </section>
 
@@ -45,7 +50,9 @@ export default function Home() {
         <div className="container">
           <h1>XPDC 1000 KM Sungai Indonesia</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus sit tristique lectus amet. Sollicitudin posuere neque, non semper pharetra.</p>
-          <button className="btn-primary">RIVER GUIDE</button>
+          <Link href="/river-guide">
+            <a><button className="btn-primary">RIVER GUIDE</button></a>
+          </Link>
         </div>
       </section>
 
@@ -70,7 +77,19 @@ export default function Home() {
             </div>
           </div>
           <div>
-            <button className="btn-secondary">Kontak Kami</button>
+            <Link href="/tentang-kami#kontak">
+              <a>
+                <button className="btn-secondary">
+                  Kontak Kami&nbsp;&nbsp;
+                  <Image
+                    src="/icons/mail.svg"
+                    alt="mail"
+                    width={24}
+                    height={24}
+                  />
+                </button>
+              </a>
+            </Link>
           </div>
         </div>
       </section>
