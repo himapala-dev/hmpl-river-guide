@@ -9,7 +9,7 @@ const divisionData = [{
 },
 {
     title: "Gunung Hutan",
-    summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus sit tristique lectus amet."
+    summary: "Pijakan jejak, gegapkan langkah!"
 },
 {
     title: "Panjat Tebing",
@@ -21,7 +21,7 @@ const divisionData = [{
 },
 {
     title: "Selam",
-    summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus sit tristique lectus amet."
+    summary: "Sedalam hati laut, gemuruh luas samudera."
 },
 ]
 
