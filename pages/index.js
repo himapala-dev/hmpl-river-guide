@@ -29,8 +29,7 @@ export default function Home() {
           <div className="heading-line center">
             <div className="line"></div>
             <h1>5 Divisi</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus sit tristique lectus amet. Sollicitudin posuere neque, non semper pharetra. Posuere
-              pellentesque velit eget diam in facilisis eget sed pretium. Proin in vitae non orci feugiat leo auctor.</p>
+            <p>5 konsentrasi peminatan, pelatihan ruang, lapangan oleh instruktur dan alumni. Mendayagunakan anggota tiap divisi mencapai profesionalitas olahraga alam, beretika lingkungan, dan berwawasan kemasyarakatan.</p>
           </div>
           <DivisionCard />
         </div>
@@ -54,54 +53,54 @@ export default function Home() {
             <source src="/videos/1000km.mp4" type="video/mp4" />
           </video>
         </div>
-          <div className="container">
-            <h1>XPDC 1000 KM Sungai Indonesia</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus sit tristique lectus amet. Sollicitudin posuere neque, non semper pharetra.</p>
-            <Link href="/river-guide">
-              <a><button className="btn-primary">RIVER GUIDE</button></a>
-            </Link>
-          </div>
+        <div className="container">
+          <h1>XPDC 1000 KM Sungai Indonesia</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus sit tristique lectus amet. Sollicitudin posuere neque, non semper pharetra.</p>
+          <Link href="/river-guide">
+            <a><button className="btn-primary">RIVER GUIDE</button></a>
+          </Link>
+        </div>
       </section>
 
-        {/* Blog Card */}
-        <section id="blog">
-          <div className="container">
-            <div className="heading-line center">
-              <div className="line"></div>
-              <h1>Blog</h1>
-            </div>
+      {/* Blog Card */}
+      <section id="blog">
+        <div className="container">
+          <div className="heading-line center">
+            <div className="line"></div>
+            <h1>Blog</h1>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Kontak */}
-        <section id="kontak" className={styles.kontak}>
-          <div className="container grid-col two">
-            <div>
-              <div className="heading-line">
-                <div className="line"></div>
-                <h1>Mari Berpetualang Bersama Kami</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus sit tristique lectus amet.</p>
-              </div>
-            </div>
-            <div>
-              <Link href="/tentang-kami#kontak">
-                <a>
-                  <button className="btn-secondary">
-                    Kontak Kami&nbsp;&nbsp;
-                    <Image
-                      src="/icons/mail.svg"
-                      alt="mail"
-                      width={24}
-                      height={24}
-                    />
-                  </button>
-                </a>
-              </Link>
+      {/* Kontak */}
+      <section id="kontak" className={styles.kontak}>
+        <div className="container grid-col two">
+          <div>
+            <div className="heading-line">
+              <div className="line"></div>
+              <h1>Mari Berpetualang Bersama Kami</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus sit tristique lectus amet.</p>
             </div>
           </div>
-        </section>
+          <div>
+            <Link href="/tentang-kami#kontak">
+              <a>
+                <button className="btn-secondary">
+                  Kontak Kami&nbsp;&nbsp;
+                  <Image
+                    src="/icons/mail.svg"
+                    alt="mail"
+                    width={24}
+                    height={24}
+                  />
+                </button>
+              </a>
+            </Link>
+          </div>
+        </div>
+      </section>
     </>
-      )
+  )
 }
 
-      Home.layout = "default";
+Home.layout = "default";
