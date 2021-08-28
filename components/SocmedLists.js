@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import Skeleton from 'react-loading-skeleton'
 
 function SocmedLists({ facebook, instagram, twitter, linkedin, youtube }) {
     return (
@@ -11,7 +10,6 @@ function SocmedLists({ facebook, instagram, twitter, linkedin, youtube }) {
                         alt="fb-icon"
                         width={35}
                         height={35}
-                        placeholder={Skeleton}
                     />
                 </a>
             ) : ""}
@@ -23,7 +21,6 @@ function SocmedLists({ facebook, instagram, twitter, linkedin, youtube }) {
                         alt="yt-icon"
                         width={35}
                         height={35}
-                        placeholder={Skeleton}
                     />
                 </a>
             ) : ""}
@@ -36,7 +33,6 @@ function SocmedLists({ facebook, instagram, twitter, linkedin, youtube }) {
                         alt="ig-icon"
                         width={35}
                         height={35}
-                        placeholder={Skeleton}
                     />
                 </a>
             ) : ""}
@@ -48,7 +44,6 @@ function SocmedLists({ facebook, instagram, twitter, linkedin, youtube }) {
                         alt="twitter-icon"
                         width={35}
                         height={35}
-                        placeholder={Skeleton}
                     />
                 </a>
             ) : ""}
@@ -60,7 +55,6 @@ function SocmedLists({ facebook, instagram, twitter, linkedin, youtube }) {
                         alt="li-icon"
                         width={35}
                         height={35}
-                        placeholder={Skeleton}
                     />
                 </a>
             ) : ""}

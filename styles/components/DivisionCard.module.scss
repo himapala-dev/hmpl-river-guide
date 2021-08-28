@@ -12,7 +12,7 @@
     "caving"
     "selam";
   gap: 35px;
-  transition: all .5s;
+  transition: all 0.5s;
   margin-top: 35px;
 
   @include breakpoint(md) {
@@ -26,26 +26,30 @@
   > div {
     .cardThumbnail {
       position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       cursor: default;
       width: 100%;
       height: 100%;
       min-height: 175px;
 
-      &::before {
-        content: "";
+      .bgWrapper {
+        display: block;
+        overflow: hidden;
         position: absolute;
-        border-radius: 20px;
         top: 0;
         left: 0;
+        bottom: 0;
         right: 0;
-        width: 100%;
-        height: 100%;
-        background-repeat: no-repeat;
-        background-size: cover;
+        margin: 0;
+        z-index: -1;
         filter: brightness(35%);
+        border-radius: 20px;
       }
+
       &:hover {
-        transition: all .5s;
+        transition: all 0.5s;
 
         @include breakpoint(md) {
           transform: scale(1.1);
@@ -54,9 +58,7 @@
     }
 
     .cardText {
-      position: relative;
       margin: 15px;
-      top: 30%;
       color: white;
 
       .textInside {
@@ -74,51 +76,18 @@
 
     &:first-child {
       grid-area: rafting;
-
-      .cardThumbnail {
-        &::before {
-          background-image: url("/images/hero-banner.jpg");
-        }
-      }
-
-      .cardText {
-        top: 15%;
-        @include breakpoint(md) {
-          top: 25%;
-        }
-      }
     }
     &:nth-child(2) {
       grid-area: gh;
-      .cardThumbnail {
-        &::before {
-          background-image: url("/images/gh.jpg");
-        }
-      }
     }
     &:nth-child(3) {
       grid-area: rc;
-      .cardThumbnail {
-        &::before {
-          background-image: url("/images/rc.jpg");
-        }
-      }
     }
     &:nth-child(4) {
       grid-area: caving;
-      .cardThumbnail {
-        &::before {
-          background-image: url("/images/caving.jpg");
-        }
-      }
     }
     &:last-child {
       grid-area: selam;
-      .cardThumbnail {
-        &::before {
-          background-image: url("/images/diving.jpg");
-        }
-      }
     }
   }
 }
