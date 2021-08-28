@@ -6,7 +6,10 @@ import styles from '../styles/Home.module.scss';
 import Image from 'next/image'
 import Link from 'next/link'
 import DivisionCard from '../components/DivisionCard';
-import PengurusCarousel from '../components/PengurusCarousel';
+import dynamic from 'next/dynamic'
+import Loading from '../components/Loading';
+
+const PengurusCarousel = dynamic(() => import('../components/PengurusCarousel'), { loading: () => <Loading /> })
 
 export default function Home() {
   return (
