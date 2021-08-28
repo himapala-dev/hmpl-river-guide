@@ -1,6 +1,8 @@
 @import "variables";
 @import "mixins";
 @import "./utils";
+@import "~slick-carousel/slick/slick";
+@import "~slick-carousel/slick/slick-theme";
 
 @font-face {
   font-family: "Roboto";
@@ -329,3 +331,42 @@ button {
     }
   }
 }
+
+.slick-slider {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+// .pengurusCarousel {
+//   .carouselImgWrapper {
+//     // position: relative;
+//     // border-radius: 50%;
+//     // border: 5px solid $primaryColor;
+//     // width: 100%;
+//     // height: 100%;
+//     // max-width: 240px;
+//     // max-height: 240px;
+//     // overflow: hidden;
+//     // z-index: -1;
+
+//     .profilePhoto {
+//       border-radius: 50%;
+//       img {
+//         // display: block;
+//         // position: absolute;
+//         // top: 0;
+//         // left: 0;
+//         // right: 0;
+//         // bottom: 0;
+//         // margin: 0;
+//         // max-width: 210px;
+//         // max-height: 210px;
+//         border-radius: 50%;
+//       }
+//     }
+//   }
+// }

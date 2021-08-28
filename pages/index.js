@@ -6,8 +6,7 @@ import styles from '../styles/Home.module.scss';
 import Image from 'next/image'
 import Link from 'next/link'
 import DivisionCard from '../components/DivisionCard';
-// import Pagination from '../components/Pagination';
-// import Carousel from '../components/Carousel';
+import PengurusCarousel from '../components/PengurusCarousel';
 
 export default function Home() {
   return (
@@ -54,8 +53,7 @@ export default function Home() {
             <div className="line"></div>
             <h1>Pengurus</h1>
           </div>
-          {/* <Carousel /> */}
-          {/* <Pagination /> */}
+          <PengurusCarousel />
         </div>
       </section>
 

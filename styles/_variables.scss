@@ -10,6 +10,7 @@ $primaryHover: #111159;
 $whiteFilter: brightness(0) invert(1);
 $primaryFilter: brightness(0) saturate(100%) invert(11%) sepia(25%);
 $whiteHoverFilter: brightness(0) saturate(100%) invert(89%) sepia(1%) saturate(847%) hue-rotate(317deg) brightness(92%) contrast(79%);
+$mutedFilter: brightness(0) saturate(100%) invert(66%) sepia(0%) saturate(7340%) hue-rotate(143deg) brightness(101%) contrast(87%);
 
 // Font Family
 $primaryFont: "Roboto", sans-serif;

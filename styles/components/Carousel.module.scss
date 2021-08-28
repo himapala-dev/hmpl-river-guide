@@ -1,0 +1,48 @@
+@import "../mixins";
+@import "../variables";
+
+.pengurusCarousel {
+  margin-top: 100px;
+
+  .profilePhoto {
+    border-radius: 50%;
+    &:hover {
+      transition: all 0.5s;
+
+      @include breakpoint(md) {
+        transform: scale(0.9);
+      }
+    }
+  }
+
+  .carouselSoc {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 15px;
+      margin-top: 25px;
+      img {
+          filter: $mutedFilter;
+      }
+  }
+}
+
+.imgCarousel {
+  width: 100%;
+  max-width: 235px;
+  max-height: 235px;
+  height: 100%;
+  display: flex;
+  position: relative;
+  border-radius: 50%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  border: 5px solid $primaryColor;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+}
