@@ -8,6 +8,7 @@ import Link from 'next/link'
 import DivisionCard from '../components/DivisionCard';
 import dynamic from 'next/dynamic'
 import Loading from '../components/Loading';
+import BlogCard from '../components/BlogCard';
 
 const PengurusCarousel = dynamic(() => import('../components/PengurusCarousel'), { loading: () => <Loading /> })
 
@@ -81,6 +82,7 @@ export default function Home() {
             <div className="line"></div>
             <h1>Blog</h1>
           </div>
+          <BlogCard />
         </div>
       </section>
 
@@ -90,8 +92,8 @@ export default function Home() {
           <div>
             <div className="heading-line">
               <div className="line"></div>
-              <h1>Mari Berpetualang Bersama Kami</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus sit tristique lectus amet.</p>
+              <h1>Berpetualang Bersama Kami</h1>
+              <p>Bingkai jelajah nusantara lekat dengan asa dalam potret kolaborasi.</p>
             </div>
           </div>
           <div>

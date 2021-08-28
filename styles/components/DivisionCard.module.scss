@@ -13,7 +13,7 @@
     "selam";
   gap: 35px;
   transition: all 0.5s;
-  margin-top: 35px;
+  margin-top: 50px;
 
   @include breakpoint(md) {
     grid-template-columns: repeat(3, 1fr);
