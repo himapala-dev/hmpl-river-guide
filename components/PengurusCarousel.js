@@ -35,7 +35,7 @@ function PrevArrow(props) {
 const pengurusData = Array(20).fill({
     name: "Trio Adi Saputra",
     title: "Ketua Umum",
-    src: "/images/ex.jpg",
+    src: "/images/carousel-img.jpg",
     socmed: {
         facebook: "https://www.facebook.com/himapala.unesa",
         instagram: "https://www.instagram.com/himapala.unesa/",
