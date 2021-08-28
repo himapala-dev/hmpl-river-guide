@@ -12,7 +12,18 @@ import DivisionCard from '../components/DivisionCard';
 export default function Home() {
   return (
     <>
-      <div className="topWrapper"></div>
+      <div className="topWrapper">
+        <div className="bgWrapper">
+          <Image
+            src="/images/hero-banner.jpg"
+            alt="hero"
+            layout="fill"
+            objectFit="cover"
+            placeholder="blur"
+            blurDataURL="/images/hero-banner.jpg"
+          />
+        </div>
+      </div>
       <Navbar />
       <Hero
         id="hero-home"

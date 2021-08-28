@@ -31,6 +31,8 @@ function Hero({ id, title, summary, image, link, button, socmed }) {
                                     alt="hmpl-logo"
                                     width={287}
                                     height={350}
+                                    placeholder="blur"
+                                    blurDataURL="/images/logo.png"
                                 />
                             </div>
                             ) : ""}

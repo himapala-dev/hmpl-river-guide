@@ -11,7 +11,7 @@
       margin-left: auto;
       margin-right: auto;
 
-      @include breakpoint(md) {
+      @include breakpoint(lg) {
         margin-left: 0;
         margin-right: 0;
       }

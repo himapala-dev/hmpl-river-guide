@@ -74,6 +74,8 @@ function Footer() {
                                 alt="hmpl-logo"
                                 width={143}
                                 height={175}
+                                placeholder="blur"
+                                blurDataURL="/images/logo.png"
                             />
                         </div>
                     </div>
