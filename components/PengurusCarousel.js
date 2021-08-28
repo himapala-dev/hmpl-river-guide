@@ -95,7 +95,7 @@ export default class PengurusCarousel extends Component {
                                 <div className={styles.imgCarousel}>
                                     <Image
                                         src={slide.src}
-                                        alt="ex"
+                                        alt="carousel-image"
                                         width={210}
                                         height={210}
                                         placeholder="blur"
