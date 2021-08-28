@@ -62,11 +62,9 @@ export default function Home() {
 
       {/* 100KM section */}
       <section id="xpdc">
-        <div className="videoWrapper">
-          <video autoPlay muted loop id="myVideo" loading="lazy" preload="auto" playsInline>
-            <source src="/videos/1000km.mp4" type="video/mp4" />
-          </video>
-        </div>
+        <video autoPlay muted loop id="myVideo" loading="lazy" preload="auto" playsInline className="styles.videoBanner">
+          <source src="/videos/1000km.mp4" type="video/mp4" />
+        </video>
         <div className="container">
           <h1>XPDC 1000 KM Sungai Indonesia</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus sit tristique lectus amet. Sollicitudin posuere neque, non semper pharetra.</p>
