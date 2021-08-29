@@ -229,7 +229,8 @@ footer {
     }
   }
 
-  h4, h1 {
+  h4,
+  h1 {
     margin: 0;
     color: white;
   }
@@ -348,4 +349,10 @@ button {
   justify-content: center;
   text-align: center;
   width: 100%;
+}
+
+#nprogress {
+  .spinner-icon {
+    display: none;
+  }
 }
