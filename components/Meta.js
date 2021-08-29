@@ -103,7 +103,7 @@ const Meta = ({ title, keywords, description, image, urlWeb, altImage, type }) =
 
                 <meta name="twitter:title" content={title} />
                 <meta name="twitter:description" content={description} />
-                <meta name="twitter:image" content={image} />
+                <meta data-react-helmet="true" name="twitter:image:src" content={image} />
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:image:alt" content={altImage} />
                 <meta name="twitter:site" content="@hmpl_unesa" />
@@ -130,7 +130,7 @@ const Meta = ({ title, keywords, description, image, urlWeb, altImage, type }) =
 
 Meta.defaultProps = {
     title: 'Himapala Unesa',
-    image: '/images/logo.png',
+    image: '/meta-logo.png',
     altImage: "logo",
     keywords: 'mapala, unesa, himapala, river guide, rafting, ekspedisi',
     description: 'Himpunan Mahasiswa Pencinta Alam Universitas Negeri Surabaya.',
