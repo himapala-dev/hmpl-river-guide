@@ -1,25 +1,10 @@
 import App from "next/app";
-import Router from "next/router";
-import nProgress from "nprogress";
-import { useEffect, useState } from "react";
+import NextNProgress from "nextjs-progressbar";
+import { useEffect } from "react";
 import LayoutWrapper from "../components/layouts/layout-wrapper";
 import "../styles/globals.scss";
 
-Router.events.on("routeChangeStart", nProgress.start);
-Router.events.on("routeChangeComplete", nProgress.done);
-Router.events.on("routeChangeError", nProgress.done);
-
 export default function MyApp({ Component, pageProps }) {
-  // static async getInitialProps({ Component, ctx }) {
-  //   return {
-  //     pageProps: {
-  //       // Call page-level getInitialProps
-  //       ...(Component.getInitialProps
-  //         ? await Component.getInitialProps(ctx)
-  //         : {})
-  //     }
-  //   };
-  // }
 
   useEffect(() => {
     if ("serviceWorker" in navigator) {
@@ -38,6 +23,13 @@ export default function MyApp({ Component, pageProps }) {
 
   return (
     <>
+      <NextNProgress
+        color="#548235"
+        startPosition={0.3}
+        stopDelayMs={200}
+        height={3}
+        showOnShallow={true}
+      />
       <LayoutWrapper {...pageProps}>
         <Component {...pageProps} />
       </LayoutWrapper>
