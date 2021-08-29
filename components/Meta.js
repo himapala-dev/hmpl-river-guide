@@ -5,7 +5,7 @@ const fonts = [
     "OpenSans-Bold.ttf", "OpenSans-BoldItalic.ttf", "OpenSans-ExtraBold.ttf", "OpenSans-ExtraBoldItalic.ttf", "OpenSans-Italic.ttf", "OpenSans-Light.ttf", "OpenSans-LightItalic.ttf", "OpenSans-Regular.ttf", "OpenSans-SemiBold.ttf", "OpenSans-SemiBoldItalic.ttf", "Roboto-Black.ttf", "Roboto-BlackItalic.ttf", "Roboto-Bold.ttf", "Roboto-BoldItalic.ttf", "Roboto-Italic.ttf", "Roboto-Light.ttf", "Roboto-LightItalic.ttf", "Roboto-Medium.ttf", "Roboto-MediumItalic.ttf", "Roboto-Regular.ttf", "Roboto-Thin.ttf", "Roboto-ThinItalic.ttf"
 ]
 
-const Meta = ({ title, keywords, description, image, urlWeb, altImage, type, summary }) => {
+const Meta = ({ title, keywords, description, image, urlWeb, altImage, type }) => {
     return (
         <>
             <Head>
@@ -104,7 +104,7 @@ const Meta = ({ title, keywords, description, image, urlWeb, altImage, type, sum
                 <meta name="twitter:title" content={title} />
                 <meta name="twitter:description" content={description} />
                 <meta name="twitter:image" content={image} size="120x120" />
-                <meta name="twitter:card" content={summary} />
+                <meta name="twitter:card" content="summary" />
                 <meta name="twitter:image:alt" content={altImage} />
 
 
@@ -134,7 +134,6 @@ Meta.defaultProps = {
     description: 'Himpunan Mahasiswa Pencinta Alam Universitas Negeri Surabaya.',
     urlWeb: "https://hmpl-river-guide.vercel.app",
     type: "website",
-    summary: "Berpetualang tanpa batas!"
 }
 
 export default Meta
