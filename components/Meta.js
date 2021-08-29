@@ -106,7 +106,9 @@ const Meta = ({ title, keywords, description, image, urlWeb, altImage, type }) =
                 <meta name="twitter:image" content={image} />
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:image:alt" content={altImage} />
-
+                <meta name="twitter:site" content="@hmpl_unesa" />
+                <meta property="twitter:url" content={urlWeb} />
+                <meta name="twitter:creator" content="@hmpl_unesa" />
 
                 {/* Non-Essential, But Recommended */}
                 <meta property="og:site_name" content="Himapala River Guide" />
