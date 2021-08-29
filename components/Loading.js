@@ -1,10 +1,14 @@
+import styles from "../styles/components/Loading.module.scss";
 
-function Loading() {
+function Loading(props) {
     return (
-        <div>
-            <p>Sedang Memuat Komponen...</p>
+        <div className={props.loading ? styles.loading : styles.none}>
+            <div className={styles.elipsis}>
+                <div></div>
+                <div></div>
+            </div>
         </div>
-    )
+    );
 }
 
-export default Loading
+export default Loading;

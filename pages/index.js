@@ -5,12 +5,12 @@ import Footer from '../components/Footer';
 import styles from '../styles/Home.module.scss';
 import Image from 'next/image'
 import Link from 'next/link'
-import DivisionCard from '../components/DivisionCard';
 import dynamic from 'next/dynamic'
 import Loading from '../components/Loading';
 import BlogCard from '../components/BlogCard';
 
-const PengurusCarousel = dynamic(() => import('../components/PengurusCarousel'), { loading: () => <Loading /> })
+const DivisionCard = dynamic(() => import("../components/DivisionCard"), { loading: () => <Loading loading={true} /> })
+const PengurusCarousel = dynamic(() => import('../components/PengurusCarousel'), { loading: () => <Loading loading={true} /> })
 
 export default function Home() {
   return (

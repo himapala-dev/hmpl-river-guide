@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import Image from "next/image";
 import styles from "../styles/components/Carousel.module.scss"
 import SocmedLists from "./SocmedLists";
+import Loading from "./Loading";
 
 function NextArrow(props) {
     const { onClick } = props;
@@ -91,7 +92,7 @@ export default class PengurusCarousel extends Component {
                                         alt="carousel-image"
                                         width={210}
                                         height={210}
-                                        placeholder="blur"
+                                        placeholder= "blur"
                                         blurDataURL={slide.src}
                                         objectFit="cover"
                                         className={styles.profilePhoto}

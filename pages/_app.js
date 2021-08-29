@@ -1,7 +1,13 @@
 import App from "next/app";
-import { useEffect } from "react";
+import Router from "next/router";
+import nProgress from "nprogress";
+import { useEffect, useState } from "react";
 import LayoutWrapper from "../components/layouts/layout-wrapper";
 import "../styles/globals.scss";
+
+Router.events.on("routeChangeStart", nProgress.start);
+Router.events.on("routeChangeComplete", nProgress.done);
+Router.events.on("routeChangeError", nProgress.done);
 
 export default function MyApp({ Component, pageProps }) {
   // static async getInitialProps({ Component, ctx }) {
@@ -14,6 +20,7 @@ export default function MyApp({ Component, pageProps }) {
   //     }
   //   };
   // }
+
   useEffect(() => {
     if ("serviceWorker" in navigator) {
       window.addEventListener("load", function () {
@@ -30,8 +37,10 @@ export default function MyApp({ Component, pageProps }) {
   }, [])
 
   return (
-    <LayoutWrapper {...pageProps}>
-      <Component {...pageProps} />
-    </LayoutWrapper>
+    <>
+      <LayoutWrapper {...pageProps}>
+        <Component {...pageProps} />
+      </LayoutWrapper>
+    </>
   );
 }

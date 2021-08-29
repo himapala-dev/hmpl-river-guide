@@ -1,9 +1,10 @@
 import React from 'react'
+// import Loading from './Loading'
 
 function BlogCard() {
     return (
         <div>
-            Blog card
+            {/* <Loading loading={true} /> */}
         </div>
     )
 }
