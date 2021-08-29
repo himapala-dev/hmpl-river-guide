@@ -13,7 +13,7 @@ app
 
         // requests to /service-worker.js
         server.get(
-            "./service-worker.js",
+            "/sw.js",
             express.static(path.join(__dirname, ".next"))
         );
 
