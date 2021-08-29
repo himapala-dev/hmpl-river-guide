@@ -5,7 +5,7 @@ const fonts = [
     "OpenSans-Bold.ttf", "OpenSans-BoldItalic.ttf", "OpenSans-ExtraBold.ttf", "OpenSans-ExtraBoldItalic.ttf", "OpenSans-Italic.ttf", "OpenSans-Light.ttf", "OpenSans-LightItalic.ttf", "OpenSans-Regular.ttf", "OpenSans-SemiBold.ttf", "OpenSans-SemiBoldItalic.ttf", "Roboto-Black.ttf", "Roboto-BlackItalic.ttf", "Roboto-Bold.ttf", "Roboto-BoldItalic.ttf", "Roboto-Italic.ttf", "Roboto-Light.ttf", "Roboto-LightItalic.ttf", "Roboto-Medium.ttf", "Roboto-MediumItalic.ttf", "Roboto-Regular.ttf", "Roboto-Thin.ttf", "Roboto-ThinItalic.ttf"
 ]
 
-const Meta = ({ title, keywords, description, image, urlWeb, altImage, type }) => {
+const Meta = ({ title, keywords, description, image, urlWeb, altImage, type, summary }) => {
     return (
         <>
             <Head>
@@ -103,8 +103,8 @@ const Meta = ({ title, keywords, description, image, urlWeb, altImage, type }) =
 
                 <meta name="twitter:title" content={title} />
                 <meta name="twitter:description" content={description} />
-                <meta name="twitter:image" content={image} />
-                <meta name="twitter:card" content={image} />
+                <meta name="twitter:image" content={image} size="120120" />
+                <meta name="twitter:card" content={summary} />
                 <meta name="twitter:image:alt" content={altImage} />
 
 
@@ -133,7 +133,8 @@ Meta.defaultProps = {
     keywords: 'mapala, unesa, himapala, river guide, rafting, ekspedisi',
     description: 'Himpunan Mahasiswa Pencinta Alam Universitas Negeri Surabaya.',
     urlWeb: "https://hmpl-river-guide.vercel.app",
-    type: "website"
+    type: "website",
+    summary: "Berpetualang tanpa batas!"
 }
 
 export default Meta
