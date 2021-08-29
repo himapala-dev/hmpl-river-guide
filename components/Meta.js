@@ -5,7 +5,7 @@ const fonts = [
     "OpenSans-Bold.ttf", "OpenSans-BoldItalic.ttf", "OpenSans-ExtraBold.ttf", "OpenSans-ExtraBoldItalic.ttf", "OpenSans-Italic.ttf", "OpenSans-Light.ttf", "OpenSans-LightItalic.ttf", "OpenSans-Regular.ttf", "OpenSans-SemiBold.ttf", "OpenSans-SemiBoldItalic.ttf", "Roboto-Black.ttf", "Roboto-BlackItalic.ttf", "Roboto-Bold.ttf", "Roboto-BoldItalic.ttf", "Roboto-Italic.ttf", "Roboto-Light.ttf", "Roboto-LightItalic.ttf", "Roboto-Medium.ttf", "Roboto-MediumItalic.ttf", "Roboto-Regular.ttf", "Roboto-Thin.ttf", "Roboto-ThinItalic.ttf"
 ]
 
-const Meta = ({ title, keywords, description, image, urlWeb, altImage }) => {
+const Meta = ({ title, keywords, description, image, urlWeb, altImage, type }) => {
     return (
         <>
             <Head>
@@ -98,14 +98,18 @@ const Meta = ({ title, keywords, description, image, urlWeb, altImage }) => {
                 <meta property="og:title" content={title} />
                 <meta property="og:description" content={description} />
                 <meta property="og:image" content={image} />
+                <meta property="og:type" content={type} />
                 <meta property="og:url" content={urlWeb} />
-                <meta name="twitter:card" content="summary_large_image" />
+
+                <meta name="twitter:title" content={title} />
+                <meta name="twitter:description" content={description} />
+                <meta name="twitter:image" content={image} />
+                <meta name="twitter:card" content={image} />
+                <meta name="twitter:image:alt" content={altImage} />
 
 
                 {/* Non-Essential, But Recommended */}
-
                 <meta property="og:site_name" content="Himapala River Guide" />
-                <meta name="twitter:image:alt" content={altImage} />
 
                 {fonts.map(e => {
                     <link
@@ -128,7 +132,8 @@ Meta.defaultProps = {
     altImage: "logo",
     keywords: 'mapala, unesa, himapala, river guide, rafting, ekspedisi',
     description: 'Himpunan Mahasiswa Pencinta Alam Universitas Negeri Surabaya.',
-    urlWeb: "https://hmpl-river-guide.vercel.app"
+    urlWeb: "https://hmpl-river-guide.vercel.app",
+    type: "website"
 }
 
 export default Meta
