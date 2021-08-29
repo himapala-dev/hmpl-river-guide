@@ -1,6 +1,7 @@
 {
   "name": "hmpl-river-guide",
   "version": "0.1.0",
+  "homepage": "https://hmpl-river-guide.vercel.app",
   "private": true,
   "scripts": {
     "server": "next build && SET NODE_ENV=development node server.js",
