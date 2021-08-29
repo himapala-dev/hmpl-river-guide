@@ -124,7 +124,7 @@ const Meta = ({ title, keywords, description, image, urlWeb, altImage }) => {
 
 Meta.defaultProps = {
     title: 'Himapala Unesa',
-    image: '/images/meta-logo.png',
+    image: '/meta-logo.png',
     altImage: "logo",
     keywords: 'mapala, unesa, himapala, river guide, rafting, ekspedisi',
     description: 'Himpunan Mahasiswa Pencinta Alam Universitas Negeri Surabaya.',
