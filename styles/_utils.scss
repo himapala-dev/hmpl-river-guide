@@ -14,7 +14,7 @@
   overflow: hidden;
   z-index: -1;
 
-  @media screen and (max-width: 300px) {
+  @include breakpoint(xxxs) {
     max-height: 575px;
   }
 
@@ -62,6 +62,7 @@
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
+  max-width: 100%;
 
   @include breakpoint(md) {
     padding-left: 35px;

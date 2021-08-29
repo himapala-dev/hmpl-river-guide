@@ -1,5 +1,13 @@
 @mixin breakpoint($point) {
-  @if $point==xs {
+  @if $point==xxxs {
+    @media (max-width: 300px) {
+      @content;
+    }
+  } @else if $point==xxs {
+    @media (min-width: 300px) {
+      @content;
+    }
+  } @else if $point==xs {
     @media (min-width: 480px) {
       @content;
     }

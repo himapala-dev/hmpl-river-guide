@@ -9,7 +9,7 @@
     font-weight: bold;
     text-transform: uppercase;
 
-    @media screen and (max-width: 300px) {
+    @include breakpoint(xxxs) {
       font-size: 1.5rem;
     }
   }
