@@ -4,7 +4,7 @@ function SocmedLists({ facebook, instagram, twitter, linkedin, youtube }) {
     return (
         <>
             {facebook ? (
-                <a href={facebook}>
+                <a href={facebook} target="_blank" rel="noreferrer">
                     <Image
                         src='/icons/icons8-facebook-f.svg'
                         alt="fb-icon"
@@ -15,7 +15,7 @@ function SocmedLists({ facebook, instagram, twitter, linkedin, youtube }) {
             ) : ""}
 
             {youtube ? (
-                <a href={youtube}>
+                <a href={youtube} target="_blank" rel="noreferrer">
                     <Image
                         src='/icons/youtube.svg'
                         alt="yt-icon"
@@ -27,7 +27,7 @@ function SocmedLists({ facebook, instagram, twitter, linkedin, youtube }) {
 
 
             {instagram ? (
-                <a href={instagram}>
+                <a href={instagram} target="_blank" rel="noreferrer">
                     <Image
                         src='/icons/icons8-instagram-logo.svg'
                         alt="ig-icon"
@@ -38,7 +38,7 @@ function SocmedLists({ facebook, instagram, twitter, linkedin, youtube }) {
             ) : ""}
 
             {twitter ? (
-                <a href={twitter}>
+                <a href={twitter} target="_blank" rel="noreferrer">
                     <Image
                         src='/icons/icons8-twitter.svg'
                         alt="twitter-icon"
@@ -49,7 +49,7 @@ function SocmedLists({ facebook, instagram, twitter, linkedin, youtube }) {
             ) : ""}
 
             {linkedin ? (
-                <a href={linkedin}>
+                <a href={linkedin} target="_blank" rel="noreferrer">
                     <Image
                         src='/icons/linkedin-svgrepo-com.svg'
                         alt="li-icon"
