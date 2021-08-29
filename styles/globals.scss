@@ -214,13 +214,14 @@ footer {
   padding: 35px 0;
   width: 100%;
   background-color: $primaryColor;
+  color: white;
 
   ul {
     list-style-type: none;
-    padding: 10px 0 0;
+    padding-left: 0;
 
     li {
-      padding: 8px 0;
+      padding: 0 0 16px;
 
       a:hover {
         color: $whiteHover;
@@ -228,20 +229,13 @@ footer {
     }
   }
 
-  h1,
-  p,
-  h4,
-  ul {
+  h4, h1 {
+    margin: 0;
     color: white;
   }
 
-  h1 {
-    margin: 0;
-  }
-
   .grid-col {
-    gap: 25px;
-    align-items: center;
+    gap: 15px;
     text-align: center;
 
     @include breakpoint(md) {
@@ -253,6 +247,10 @@ footer {
         div {
           &:last-child {
             text-align: center;
+
+            @include breakpoint(md) {
+              text-align: right;
+            }
           }
         }
       }
@@ -263,30 +261,38 @@ footer {
       margin-top: 35px;
 
       div {
-        a {
-          padding: 0 15px;
-          img {
-            filter: $whiteFilter;
-            &:hover {
-              filter: $whiteHoverFilter;
-            }
+        img {
+          filter: $whiteFilter;
+          &:hover {
+            filter: $whiteHoverFilter;
           }
         }
 
-        @include breakpoint(md) {
+        &:first-child {
+          display: flex;
+          justify-content: space-evenly;
+        }
+      }
+
+      @include breakpoint(md) {
+        margin-top: 0;
+
+        div {
           &:first-child {
             text-align: left;
+            justify-content: left;
+
+            a {
+              padding-right: 35px;
+            }
           }
+
           &:last-child {
             text-align: right;
           }
         }
       }
     }
-  }
-
-  @include breakpoint(md) {
-    padding: 50px 0;
   }
 }
 

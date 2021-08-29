@@ -68,7 +68,7 @@ export default function Home() {
         </video>
         <div className="container">
           <h1>XPDC 1000 KM Sungai Indonesia</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus sit tristique lectus amet. Sollicitudin posuere neque, non semper pharetra.</p>
+          <p>Mimpi Himapala untuk Indonesia. Proyek 1000 km bertajuk basis data arung jeram.<br /> Eksplor pengarunganmu disini!!</p>
           <Link href="/river-guide">
             <a><button className="btn-primary">RIVER GUIDE</button></a>
           </Link>

@@ -10,12 +10,10 @@ function Footer() {
                 <div className="container">
                     <div className="grid-col four">
                         <div>
-                            <h1>Himapala Unesa</h1>
+                            <h4>Himapala Unesa</h4>
                             <p>Sekretariat Himapala Unesa, Gedung P7, Kampus Lidah Wetan
                                 Universitas Negeri Surabaya
                                 Lakarsantri, Surabaya<br /><br />
-
-                                http://himapala.unesa.ac.id<br />
                                 hmpl.unesa@gmail.com</p>
                         </div>
                         <div>
