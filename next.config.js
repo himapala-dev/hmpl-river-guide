@@ -7,7 +7,6 @@ const optimizedImages = require('next-optimized-images');
 const nextConfig = {};
 
 module.exports = {
-  assetPrefix: isProd ? 'https://cdn.statically.io/gh/himapala-dev/hmpl-river-guide/' : '',
   withOffline: nextConfig,
   reactStrictMode: true,
   basePath: '/hmpl-river-guide',
