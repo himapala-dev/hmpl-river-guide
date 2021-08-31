@@ -6,7 +6,7 @@
   "scripts": {
     "server": "next build && SET NODE_ENV=development node server.js",
     "dev": "next dev",
-    "build": "next build && SET NODE_ENV=production",
+    "build": "next build && set NODE_ENV=production",
     "start": "next start",
     "lint": "next lint",
     "export": "next export",
