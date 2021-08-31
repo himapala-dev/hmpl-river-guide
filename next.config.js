@@ -4,13 +4,19 @@ const withPWA = require('next-pwa');
 const withPlugins = require('next-compose-plugins');
 const optimizedImages = require('next-optimized-images');
 
+const plugin = withPlugins([
+  [optimizedImages,],
+  {
+    basePath: '/hmpl-river-guide',
+    assetPrefix: '/hmpl-river-guide/',
+  },
+]);
+
 const nextConfig = {};
 
 module.exports = {
   withOffline: nextConfig,
   reactStrictMode: true,
-  basePath: '/hmpl-river-guide',
-  assetPrefix: '/hmpl-river-guide/',
   withPWA: {
     pwa: {
       dest: 'public'
@@ -25,8 +31,5 @@ module.exports = {
       "picsum.photos",
     ],
   },
-  withPlugins: {
-    optimizedImages,
-    imagesPublicPath: '/hmpl-river-guide/',
-  },
+  plugin,
 }
