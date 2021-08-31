@@ -8,11 +8,11 @@ const debug = process.env.NODE_ENV !== "production";
 const plugin = withPlugins([
   [optimizedImages, {
     images: {
-      imagesPublicPath: !debug ? '/hmpl-river-guide/_next/static/images/' : "",
       domains: [
         "picsum.photos",
       ],
     },
+    imagesPublicPath: '/hmpl-river-guide/_next/static/images/',
   }],
 ]);
 
