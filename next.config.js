@@ -14,15 +14,13 @@ const plugin = withPlugins([
       ],
     },
   }],
-  {
-    basePath: !debug ? '/hmpl-river-guide' : '',
-    assetPrefix: !debug ? '/hmpl-river-guide' : '',
-  }
 ]);
 
 const nextConfig = {};
 
 module.exports = {
+  basePath: !debug ? '/hmpl-river-guide' : '',
+  assetPrefix: !debug ? '/hmpl-river-guide' : '',
   withOffline: nextConfig,
   reactStrictMode: true,
   withPWA: {
