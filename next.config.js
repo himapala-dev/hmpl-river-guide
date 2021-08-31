@@ -31,6 +31,5 @@ module.exports = {
     },
     basePath: '/hmpl-river-guide',
     assetPrefix: '/hmpl-river-guide/',
-    env,
   },
 }
