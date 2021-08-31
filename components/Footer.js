@@ -1,7 +1,7 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import ScrollButton from './BackToTop';
 import SocmedLists from './SocmedLists'
+import Logo from '../public/images/logo.png'
 
 function Footer() {
     return (
@@ -67,13 +67,11 @@ function Footer() {
                             </ul>
                         </div>
                         <div>
-                            <Image
-                                src="/images/logo.png"
+                            <img
+                                src={`${Logo.src}?lqip`}
                                 alt="hmpl-logo"
-                                width={143}
-                                height={175}
-                                placeholder="blur"
-                                blurDataURL="/images/logo.png"
+                                width="143"
+                                height="175"
                             />
                         </div>
                     </div>

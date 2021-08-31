@@ -1,14 +1,16 @@
 const path = require('path')
 const withOffline = require("next-offline");
-const withPWA = require('next-pwa')
+const withPWA = require('next-pwa');
+const withPlugins = require('next-compose-plugins');
+const optimizedImages = require('next-optimized-images');
 
 const nextConfig = {};
 
 module.exports = {
-  reactStrictMode: true,
   withOffline: nextConfig,
+  reactStrictMode: true,
   withPWA: {
-    pwa : {
+    pwa: {
       dest: 'public'
     }
   },
@@ -20,5 +22,8 @@ module.exports = {
     domains: [
       "picsum.photos",
     ],
+  },
+  withPlugins: {
+    optimizedImages,
   },
 }

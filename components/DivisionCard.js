@@ -1,32 +1,31 @@
 import React from 'react'
 import styles from '../styles/components/DivisionCard.module.scss'
 import Link from 'next/link'
-import Image from 'next/image'
 
 const divisionData = [{
     title: "Arung Jeram",
     summary: "Siapkan pengarunganmu. Tantang jerammu!",
-    image: "/images/hero-banner.jpg"
+    image: "hero-banner.jpg"
 },
 {
     title: "Gunung Hutan",
     summary: "Pijakan jejak, gegapkan langkah!",
-    image: "/images/gh.jpg"
+    image: "gh.jpg"
 },
 {
     title: "Panjat Tebing",
     summary: "Berkawan kepal karst dan andesit.",
-    image: "/images/rc.jpg"
+    image: "rc.jpg"
 },
 {
     title: "Susur Gua",
     summary: "Merayap meyelami zona gelap abadi.",
-    image: "/images/caving.jpg"
+    image: "caving.jpg"
 },
 {
     title: "Selam",
     summary: "Sedalam hati laut, diam tak berbatas",
-    image: "/images/diving.jpg"
+    image: "diving.jpg"
 },
 ]
 
@@ -39,13 +38,9 @@ function DivisionCard() {
                         <div className={`${e.title == "Arung Jeram" ? styles.cardDivision : styles.raftingCard}`}>
                             <div className={styles.cardThumbnail}>
                                 <div className={styles.bgWrapper}>
-                                    <Image
-                                        src={e.image}
+                                    <img
+                                        src={`/images/${e.image}?lqip`}
                                         alt="division img"
-                                        layout="fill"
-                                        objectFit="cover"
-                                        placeholder="blur"
-                                        blurDataURL={e.image}
                                     />
                                 </div>
                                 <div className={styles.cardText}>

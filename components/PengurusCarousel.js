@@ -1,19 +1,20 @@
 import { Component } from "react";
 import Slider from "react-slick";
-import Image from "next/image";
 import styles from "../styles/components/Carousel.module.scss"
 import SocmedLists from "./SocmedLists";
 import Loading from "./Loading";
+import ChevRight from '../public/icons/chevron-right.svg'
+import ChevLeft from '../public/icons/chevron-left.svg'
 
 function NextArrow(props) {
     const { onClick } = props;
     return (
         <div className="nextArrow" onClick={onClick}>
-            <Image
-                src="/icons/chevron-right.svg"
+            <img
+                src={`${ChevRight.src}?sprite`}
                 alt="chev-right"
-                width={48}
-                height={48}
+                width="48"
+                height="48"
             />
         </div>
     );
@@ -23,11 +24,11 @@ function PrevArrow(props) {
     const { onClick } = props;
     return (
         <div className="prevArrow" onClick={onClick}>
-            <Image
-                src="/icons/chevron-left.svg"
+            <img
+                src={`${ChevLeft.src}?sprite`}
                 alt="chev-left"
-                width={48}
-                height={48}
+                width="48"
+                height="48"
             />
         </div>
     );
@@ -87,14 +88,11 @@ export default class PengurusCarousel extends Component {
                         return (
                             <div key={slide.name}>
                                 <div className={styles.imgCarousel}>
-                                    <Image
-                                        src={slide.src}
+                                    <img
+                                        src={`${slide.src}?lqip`}
                                         alt="carousel-image"
-                                        width={210}
-                                        height={210}
-                                        placeholder= "blur"
-                                        blurDataURL={slide.src}
-                                        objectFit="cover"
+                                        width="210"
+                                        height="210"
                                         className={styles.profilePhoto}
                                     />
                                 </div>

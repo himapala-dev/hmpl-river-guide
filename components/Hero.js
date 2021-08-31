@@ -1,5 +1,5 @@
 import styles from '../styles/components/Hero.module.scss'
-import Image from 'next/image'
+import Logo from '../public/images/logo.png'
 import Link from 'next/link'
 import SocmedLists from './SocmedLists'
 
@@ -26,13 +26,11 @@ function Hero({ id, title, summary, image, link, button, socmed }) {
                         <div>
                             {image ? (
                                 <div className={styles.heroImg}>
-                                <Image
-                                    src="/images/logo.png"
+                                <img
+                                    src={`${Logo.src}?lqip-colors[#A4A4A4]`}
                                     alt="hmpl-logo"
-                                    width={287}
-                                    height={350}
-                                    placeholder="blur"
-                                    blurDataURL="/images/logo.png"
+                                    width="287"
+                                    height="350"
                                 />
                             </div>
                             ) : ""}

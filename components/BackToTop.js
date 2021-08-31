@@ -1,52 +1,5 @@
-// import React from 'react';
-// import Link from 'next/link'
-// import Image from 'next/image'
-
-// class ScrollButton extends React.Component {
-//     constructor() {
-//         super();
-
-//         this.state = {
-//             intervalId: 0
-//         };
-//     }
-
-//     scrollStep() {
-//         if (window.scrollY === 0) {
-//             clearInterval(this.state.intervalId);
-//         }
-//         window.scroll(0, window.scrollY - this.props.scrollStepInPx);
-//     }
-
-//     scroll() {
-//         let intervalId = setInterval(this.scrollStep.bind(this), this.props.delayInMs);
-//         //store the intervalId inside the state, 
-//         //so we can use it later to cancel the scrolling
-//         this.setState({ intervalId: intervalId });
-//     }
-
-//     render() {
-//         return <Link href='#top' title='Back to top'
-//             id='scroll'
-//             onClick={(event) => {
-//                 event.preventDefault();
-//                 this.scroll();
-//             }}><a>
-//                 <Image
-//                     src="/icons/chevron-double-up.svg"
-//                     alt="chev-up"
-//                     width={35}
-//                     height={35}
-//                 />
-//             </a>
-//         </Link>
-//     }
-// }
-
-// export default ScrollButton;
-
+import ChevUp from '../public/icons/chevron-double-up.svg'
 import { useEffect, useState } from "react";
-import Image from 'next/image'
 
 export default function ScrollButton() {
     const [isVisible, setIsVisible] = useState(false);
@@ -79,11 +32,11 @@ export default function ScrollButton() {
         <>
             {isVisible && (
                 <a onClick={scrollToTop}>
-                    <Image
-                        src="/icons/chevron-double-up.svg"
+                    <img
+                        src={`${ChevUp.src}?lqip`}
                         alt="chev-up"
-                        width={35}
-                        height={35}
+                        width="35"
+                        height="35"
                     />
                 </a>
             )}

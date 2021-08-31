@@ -3,11 +3,13 @@ import Meta from '../components/Meta'
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import styles from '../styles/Home.module.scss';
-import Image from 'next/image'
 import Link from 'next/link'
 import dynamic from 'next/dynamic'
 import Loading from '../components/Loading';
 import BlogCard from '../components/BlogCard';
+import HeroImage from '/public/images/hero-banner.jpg';
+import Logo from '/public/images/logo.png'
+import MailIcon from '/public/icons/mail.svg'
 
 const DivisionCard = dynamic(() => import("../components/DivisionCard"), { loading: () => <Loading loading={true} /> })
 const PengurusCarousel = dynamic(() => import('../components/PengurusCarousel'), { loading: () => <Loading loading={true} /> })
@@ -17,13 +19,9 @@ export default function Home() {
     <>
       <div className="topWrapper">
         <div className="bgWrapper">
-          <Image
-            src="/images/hero-banner.jpg"
-            alt="hero"
-            layout="fill"
-            objectFit="cover"
-            placeholder="blur"
-            blurDataURL="/images/hero-banner.jpg"
+          <img
+            src={`${HeroImage.src}?lqip-colors[#A4A4A4]`}
+            alt="img-banner"
           />
         </div>
       </div>
@@ -100,12 +98,10 @@ export default function Home() {
             <Link href="/tentang-kami#kontak">
               <a>
                 <button className="btn-secondary">
-                  Kontak Kami&nbsp;&nbsp;
-                  <Image
-                    src="/icons/mail.svg"
+                  Kontak Kami
+                  <img
+                    src={`${MailIcon.src}?sprite`}
                     alt="mail"
-                    width={24}
-                    height={24}
                   />
                 </button>
               </a>
