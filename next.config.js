@@ -12,13 +12,13 @@ const plugin = withPlugins([
         "picsum.photos",
       ],
     },
-    imagesPublicPath: '/hmpl-river-guide/_next/static/image/',
   }],
 ]);
 
 const nextConfig = {};
 
 module.exports = {
+  imagesPublicPath: process.env.BACKEND_URL + '/_next/static/image/',
   basePath: !debug ? '/hmpl-river-guide' : '',
   assetPrefix: !debug ? '/hmpl-river-guide' : '',
   withOffline: nextConfig,
