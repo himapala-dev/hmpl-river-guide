@@ -20,7 +20,7 @@ export default function Home() {
       <div className="topWrapper">
         <div className="bgWrapper">
           <img
-            src={`${HeroImage.src}?lqip-colors[#A4A4A4]`}
+            src={`${process.env.BACKEND_URL + HeroImage.src}?lqip-colors[#A4A4A4]`}
             alt="img-banner"
           />
         </div>
