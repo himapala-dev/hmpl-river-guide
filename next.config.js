@@ -7,6 +7,9 @@ const debug = process.env.NODE_ENV !== "production";
 
 const plugin = withPlugins([
   [optimizedImages,],
+  {
+    basePath: !debug ? '/hmpl-river-guide/' : '',
+  }
 ]);
 
 const nextConfig = {};
