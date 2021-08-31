@@ -27,6 +27,6 @@ module.exports = {
   },
   withPlugins: {
     optimizedImages,
-    imagesPublicPath: '/hmpl-river-guide/_next/static/images/',
+    imagesPublicPath: '/hmpl-river-guide/',
   },
 }
