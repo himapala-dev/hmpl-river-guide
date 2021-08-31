@@ -67,7 +67,7 @@ export default function Home() {
         <div className="container">
           <h1>XPDC 1000 KM Sungai Indonesia</h1>
           <p>Mimpi Himapala untuk Indonesia. Proyek 1000 km bertajuk basis data arung jeram.<br /> Eksplor pengarunganmu disini!!</p>
-          <Link href="/river-guide">
+          <Link href="/river-guide" as={ process.env.BACKEND_URL + '/river-guide'}>
             <a><button className="btn-primary">RIVER GUIDE</button></a>
           </Link>
         </div>
@@ -95,7 +95,7 @@ export default function Home() {
             </div>
           </div>
           <div>
-            <Link href="/tentang-kami#kontak">
+            <Link href="/tentang-kami#kontak" as={ process.env.BACKEND_URL + '/tentang-kami#kontak'}>
               <a>
                 <button className="btn-secondary">
                   Kontak Kami

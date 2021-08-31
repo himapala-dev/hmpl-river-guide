@@ -17,7 +17,7 @@ function Hero({ id, title, summary, image, link, button, socmed }) {
                             </div>
 
                             <div className={styles.heroBtnContainer}>
-                                <Link href={link}>
+                                <Link href={link} as={ process.env.BACKEND_URL + link}>
                                     <a><button className="btn-primary">{button}</button></a>
                                 </Link>
                             </div>

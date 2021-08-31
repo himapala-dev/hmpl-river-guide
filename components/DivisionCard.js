@@ -48,7 +48,7 @@ function DivisionCard() {
                                         <h4>{e.title}</h4>
                                         <p>{e.summary}</p>
                                         {e.title == "Arung Jeram" ? (
-                                            <Link href="/river-guide">
+                                            <Link href="/river-guide" as={ process.env.BACKEND_URL + '/river-guide'}>
                                                 <a>
                                                     <button className="btn-primary">RIVER GUIDE</button>
                                                 </a>

@@ -20,22 +20,22 @@ function Footer() {
                             <h4>Tentang Kami</h4>
                             <ul>
                                 <li>
-                                    <Link href='/tentang-kami#sejarah'>
+                                    <Link href='/tentang-kami#sejarah' as={ process.env.BACKEND_URL + '/tentang-kami#sejarah'}>
                                         <a>Sejarah</a>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href='/tentang-kami#pengurus'>
+                                    <Link href='/tentang-kami#pengurus' as={ process.env.BACKEND_URL + '/tentang-kami#pengurus'}>
                                         <a>Pengurus</a>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href='/tentang-kami#rekamjejak'>
+                                    <Link href='/tentang-kami#rekamjejak' as={ process.env.BACKEND_URL + '/tentang-kami#rekamjejak'}>
                                         <a>Rekam Jejak</a>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href='/tentang-kami#kontak'>
+                                    <Link href='/tentang-kami#kontak' as={ process.env.BACKEND_URL + '/tentang-kami#kontak'}>
                                         <a>Kontak Kami</a>
                                     </Link>
                                 </li>
@@ -45,22 +45,22 @@ function Footer() {
                             <h4>Halaman</h4>
                             <ul>
                                 <li>
-                                    <Link href='/tentang-kami#syarat'>
+                                    <Link href='/tentang-kami#syarat' as={ process.env.BACKEND_URL + '/tentang-kami#syarat'}>
                                         <a>Syarat dan Ketentuan</a>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href='/tentang-kami#privasi'>
+                                    <Link href='/tentang-kami#privasi' as={ process.env.BACKEND_URL + '/tentang-kami#privasi'}>
                                         <a>Aturan Privasi</a>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href='/tentang-kami#disclaimer'>
+                                    <Link href='/tentang-kami#disclaimer' as={ process.env.BACKEND_URL + '/tentang-kami#disclaimer'}>
                                         <a>Disclaimer</a>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href='/administrator'>
+                                    <Link href='/administrator' as={ process.env.BACKEND_URL + '/tentang-kami#administrator'}>
                                         <a>Administrator</a>
                                     </Link>
                                 </li>
