@@ -7,9 +7,6 @@ const debug = process.env.NODE_ENV !== "production";
 
 const plugin = withPlugins([
   [optimizedImages,],
-  {
-    basePath: !debug ? '/hmpl-river-guide/' : '',
-  }
 ]);
 
 const nextConfig = {};
@@ -41,6 +38,7 @@ module.exports = {
       "/administrator": { page: "/administrator" },
     }
   },
+  basePath: !debug ? '/hmpl-river-guide' : '',
   assetPrefix: !debug ? '/hmpl-river-guide/' : '',
   webpack: (config, { dev }) => {
     config.module.rules = config.module.rules.map(rule => {
