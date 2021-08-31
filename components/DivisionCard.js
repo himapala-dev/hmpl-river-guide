@@ -39,7 +39,7 @@ function DivisionCard() {
                             <div className={styles.cardThumbnail}>
                                 <div className={styles.bgWrapper}>
                                     <img
-                                        src={`/images/${e.image}?lqip`}
+                                        src={`/public/images/${e.image}?lqip`}
                                         alt="division img"
                                     />
                                 </div>

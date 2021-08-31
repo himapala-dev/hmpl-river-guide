@@ -12,7 +12,7 @@ const plugin = withPlugins([
         "picsum.photos",
       ],
     },
-    imagesPublicPath: '/hmpl-river-guide',
+    imagesPublicPath: '/hmpl-river-guide/_next/static/image/',
   }],
 ]);
 
