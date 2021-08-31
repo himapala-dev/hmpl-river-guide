@@ -38,8 +38,8 @@ module.exports = {
       "/administrator": { page: "/administrator" },
     }
   },
-  basePath: !debug ? '/hmpl-river-guide' : '',
-  assetPrefix: !debug ? '/hmpl-river-guide/' : '',
+  // basePath: !debug ? '/' : '',
+  assetPrefix: !debug ? '/' : '',
   webpack: (config, { dev }) => {
     config.module.rules = config.module.rules.map(rule => {
       if(rule.loader === 'babel-loader') {
