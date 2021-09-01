@@ -322,6 +322,18 @@ button {
     }
   }
 
+  &.outline {
+    background-color: transparent;
+    border: 1px solid white;
+    box-shadow: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 0 15px;
+  }
+
   &.btn-secondary {
     color: white;
     background-color: $primaryColor;
