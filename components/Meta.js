@@ -84,7 +84,7 @@ const Meta = ({ title, keywords, description, image, urlWeb, altImage, type }) =
                 <link href={`${process.env.BACKEND_URL}/favicons/android-icon-144x144.png`} rel="icon" sizes="144x144" />
 
                 {/* Others */}
-                <link href={`${process.env.BACKEND_URL}/favicons/favicon.icon`} rel="shortcut icon" type="image/x-icon" />
+                <link href={`${process.env.BACKEND_URL}/favicons/favicon.ico`} rel="shortcut icon" type="image/x-icon" />
 
                 {/* UC Browser */}
                 <link href={`${process.env.BACKEND_URL}/favicons/apple-icon-precomposed.png`} rel="apple-touch-icon-precomposed" sizes="57x57" />
