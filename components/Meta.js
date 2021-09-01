@@ -91,7 +91,7 @@ const Meta = ({ title, keywords, description, image, urlWeb, altImage, type }) =
                 <link href={`${process.env.BACKEND_URL}/favicons/apple-icon-72x72.png`} rel="apple-touch-icon" sizes="72x72" />
 
                 {/* Manifest.json */}
-                <link href={`${process.env.BACKEND_URL}/manifest.json`} rel="manifest" />
+                <link href={`${process.env.BACKEND_URL == "/hmpl-river-guide" ? process.env.BACKEND_URL + "manifest.json" : process.env.BACKEND_URL + "/favicons/manifest.json"}`} rel="manifest" />
 
                 {/* Essential META Tags */}
 
