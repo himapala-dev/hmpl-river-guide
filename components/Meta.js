@@ -29,8 +29,8 @@ const Meta = ({ title, keywords, description, image, urlWeb, altImage, type }) =
                 {/* Windows */}
                 <meta name="msapplication-navbutton-color" content="#100058" />
                 <meta name="msapplication-TileColor" content="#100058" />
-                <meta name="msapplication-TileImage" content="/favicons/ms-icon-144x144.png" />
-                <meta name="msapplication-config" content="/favicons/browserconfig.xml" />
+                <meta name="msapplication-TileImage" content={`${process.env.BACKEND_URL}/favicons/ms-icon-144x144.png`} />
+                <meta name="msapplication-config" content={`${process.env.BACKEND_URL}/favicons/browserconfig.xml`} />
 
                 {/* Pinned Sites */}
                 <meta name="application-name" content="Himapala River Guide" />
@@ -57,41 +57,41 @@ const Meta = ({ title, keywords, description, image, urlWeb, altImage, type }) =
                 <meta name="screen-orientation" content="portrait" />
 
                 {/* Main Link Tags */}
-                <link href="/favicons/favicon-16x16.png" rel="icon" type="image/png" sizes="16x16" />
-                <link href="/favicons/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32" />
-                <link href="/favicons/favicon-96x96.png" rel="icon" type="image/png" sizes="96x96" />
+                <link href={`${process.env.BACKEND_URL}/favicons/favicon-16x16.png`} rel="icon" type="image/png" sizes="16x16" />
+                <link href={`${process.env.BACKEND_URL}/favicons/favicon-32x32.png`} rel="icon" type="image/png" sizes="32x32" />
+                <link href={`${process.env.BACKEND_URL}/favicons/favicon-96x96.png`} rel="icon" type="image/png" sizes="96x96" />
 
                 {/* iOS */}
-                <link href="/favicons/apple-icon-precomposed.png" rel="apple-touch-icon" />
-                <link href="/favicons/apple-icon-57x57.png" rel="apple-touch-icon" sizes="57x57" />
-                <link href="/favicons/apple-icon-60x60.png" rel="apple-touch-icon" sizes="60x60" />
-                <link href="/favicons/apple-icon-72x72.png" rel="apple-touch-icon" sizes="72x72" />
-                <link href="/favicons/apple-icon-76x76.png" sizes="76x76" rel="apple-touch-icon" />
-                <link href="/favicons/apple-icon-120x120.png" sizes="120x120" rel="apple-touch-icon" />
-                <link href="/favicons/apple-icon-114x114.png" rel="apple-touch-icon" sizes="114x114" />
-                <link href="/favicons/apple-icon-144x144.png" rel="apple-touch-icon" sizes="144x144" />
-                <link href="/favicons/apple-icon-152x152.png" sizes="152x152" rel="apple-touch-icon" />
-                <link href="/favicons/apple-icon-180x180.png" rel="apple-touch-icon" sizes="180x180" />
+                <link href={`${process.env.BACKEND_URL}/favicons/apple-icon-precomposed.png`} rel="apple-touch-icon" />
+                <link href={`${process.env.BACKEND_URL}/favicons/apple-icon-57x57.png`} rel="apple-touch-icon" sizes="57x57" />
+                <link href={`${process.env.BACKEND_URL}/favicons/apple-icon-60x60.png`} rel="apple-touch-icon" sizes="60x60" />
+                <link href={`${process.env.BACKEND_URL}/favicons/apple-icon-72x72.png`} rel="apple-touch-icon" sizes="72x72" />
+                <link href={`${process.env.BACKEND_URL}/favicons/apple-icon-76x76.png`} sizes="76x76" rel="apple-touch-icon" />
+                <link href={`${process.env.BACKEND_URL}/favicons/apple-icon-120x120.png`} sizes="120x120" rel="apple-touch-icon" />
+                <link href={`${process.env.BACKEND_URL}/favicons/apple-icon-114x114.png`} rel="apple-touch-icon" sizes="114x114" />
+                <link href={`${process.env.BACKEND_URL}/favicons/apple-icon-144x144.png`} rel="apple-touch-icon" sizes="144x144" />
+                <link href={`${process.env.BACKEND_URL}/favicons/apple-icon-152x152.png`} sizes="152x152" rel="apple-touch-icon" />
+                <link href={`${process.env.BACKEND_URL}/favicons/apple-icon-180x180.png`} rel="apple-touch-icon" sizes="180x180" />
 
                 {/* Startup Image */}
-                <link href="/favicons/apple-icon-180x180.png" rel="apple-touch-startup-image" />
+                <link href={`${process.env.BACKEND_URL}/favicons/apple-icon-180x180.png`} rel="apple-touch-startup-image" />
 
                 {/* Pinned Tab */}
-                <link href="/favicons/meta-logo.png" rel="mask-icon" size="any" color="#100058" />
+                <link href={`${process.env.BACKEND_URL}/favicons/meta-logo.png`}rel="mask-icon" size="any" color="#100058" />
 
                 {/* Android */}
-                <link href="/favicons/android-icon-192x192.png" rel="icon" sizes="192x192" />
-                <link href="/favicons/android-icon-144x144.png" rel="icon" sizes="144x144" />
+                <link href={`${process.env.BACKEND_URL}/favicons/android-icon-192x192.png`} rel="icon" sizes="192x192" />
+                <link href={`${process.env.BACKEND_URL}/favicons/android-icon-144x144.png`} rel="icon" sizes="144x144" />
 
                 {/* Others */}
-                <link href="/favicons/favicon.icon" rel="shortcut icon" type="image/x-icon" />
+                <link href={`${process.env.BACKEND_URL}/favicons/favicon.icon`} rel="shortcut icon" type="image/x-icon" />
 
                 {/* UC Browser */}
-                <link href="/favicons/apple-icon-precomposed.png" rel="apple-touch-icon-precomposed" sizes="57x57" />
-                <link href="/favicons/apple-icon-72x72.png" rel="apple-touch-icon" sizes="72x72" />
+                <link href={`${process.env.BACKEND_URL}/favicons/apple-icon-precomposed.png`} rel="apple-touch-icon-precomposed" sizes="57x57" />
+                <link href={`${process.env.BACKEND_URL}/favicons/apple-icon-72x72.png`} rel="apple-touch-icon" sizes="72x72" />
 
                 {/* Manifest.json */}
-                <link href="manifest.json" rel="manifest" />
+                <link href={`${process.env.BACKEND_URL}/manifest.json`} rel="manifest" />
 
                 {/* Essential META Tags */}
 
@@ -118,7 +118,7 @@ const Meta = ({ title, keywords, description, image, urlWeb, altImage, type }) =
                         key={e}
                         id={e}
                         rel="preload"
-                        href={`/fonts/${e}`}
+                        href={`${process.env.BACKEND_URL}/fonts/${e}`}
                         as="font"
                         crossOrigin=""
                     />
@@ -130,7 +130,7 @@ const Meta = ({ title, keywords, description, image, urlWeb, altImage, type }) =
 
 Meta.defaultProps = {
     title: 'Himapala Unesa',
-    image: '/favicons/meta-logo.png',
+    image: process.env.BACKEND_URL + '/favicons/meta-logo.png',
     altImage: "logo",
     keywords: 'mapala, unesa, himapala, river guide, rafting, ekspedisi',
     description: 'Himpunan Mahasiswa Pencinta Alam Universitas Negeri Surabaya.',
