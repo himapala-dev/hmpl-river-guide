@@ -5,17 +5,26 @@ import Footer from '../components/Footer';
 import styles from '../styles/Home.module.scss';
 import dynamic from 'next/dynamic'
 import Loading from '../components/Loading';
-import BlogCard from '../components/BlogCard';
 import HeroImage from '/public/images/hero-banner.jpg';
 import Logo from '/public/images/logo.png'
 import MailIcon from '/public/icons/mail.svg'
+import RightArrow from '/public/icons/arrow-right.svg'
 import Image from '../components/Image';
 import CustomLink from '../components/CustomLink';
+import { useState } from 'react';
 
 const DivisionCard = dynamic(() => import("../components/DivisionCard"), { loading: () => <Loading loading={true} /> })
+const BlogCard = dynamic(() => import("../components/BlogCard"), { loading: () => <Loading loading={true} /> })
 const PengurusCarousel = dynamic(() => import('../components/PengurusCarousel'), { loading: () => <Loading loading={true} /> })
 
+const blogData = Array(3).fill({
+  title: "Lorem Ipsum",
+  summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus sit tristique lectus amet. Sollicitudin posuere neque, non semper pharetra.",
+  image: "https://picsum.photos/seed/picsum/200/300"
+})
+
 export default function Home() {
+  const [data, setData] = useState(blogData)
   return (
     <>
       <div className="topWrapper">
@@ -67,7 +76,7 @@ export default function Home() {
         </video>
         <div className="container">
           <h1>XPDC 1000 KM Sungai Indonesia</h1>
-          <p>Mimpi Himapala untuk Indonesia. Proyek 1000 km bertajuk basis data arung jeram.<br /> Eksplor pengarunganmu disini!!</p>
+          <p>Mimpi Himapala untuk Indonesia. Proyek 1000 km bertajuk basis data arung jeram. Eksplor pengarunganmu disini!!</p>
           <CustomLink href="/river-guide">
             <a><button className="btn-primary">RIVER GUIDE</button></a>
           </CustomLink>
@@ -81,7 +90,30 @@ export default function Home() {
             <div className="line"></div>
             <h1>Blog</h1>
           </div>
-          <BlogCard />
+          <div className={styles.cardBlogContainer}>
+            {data.map(function (blog, idx) {
+              return (
+                <BlogCard
+                  key={idx}
+                  href="/blog/[id]"
+                  src={blog.image}
+                  title={blog.title}
+                  summary={blog.summary}
+                />
+              )
+            })}
+          </div>
+          <CustomLink href="/blog">
+            <a>
+              <button className="btn-secondary">Lihat Semua
+                <Image
+                  src={RightArrow}
+                  alt="right-arrow"
+                  sprite="sprite"
+                />
+              </button>
+            </a>
+          </CustomLink>
         </div>
       </section>
 

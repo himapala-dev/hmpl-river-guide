@@ -4,7 +4,7 @@
   "homepage": "http://himapala-dev.github.io/hmpl-river-guide",
   "private": true,
   "scripts": {
-    "server": "next build && set NODE_ENV=development node server.js",
+    "server": "next build && set NODE_ENV=production node server.js",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -26,7 +26,6 @@
     "lqip-loader": "^2.2.1",
     "next": "11.1.0",
     "next-compose-plugins": "^2.2.1",
-    "next-manifest": "^3.0.1",
     "next-optimized-images": "^2.6.2",
     "next-pwa": "^5.3.1",
     "nextjs-progressbar": "^0.0.11",

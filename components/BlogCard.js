@@ -1,11 +1,27 @@
-import React from 'react'
-// import Loading from './Loading'
+import styles from '../styles/components/BlogCard.module.scss'
+import CustomLink from './CustomLink'
 
-function BlogCard() {
+function BlogCard({ src, title, summary, button, href }) {
     return (
-        <div>
-            {/* <Loading loading={true} /> */}
-        </div>
+        <>
+            <div className={styles.blogCard}>
+                <CustomLink href={href}>
+                    <a>
+                        <div className={styles.cardImg}>
+                            <img src={src} alt="card-img" />
+                            <button className="outline">Baca Artikel</button>
+                        </div>
+                        <div className={styles.cardBody}>
+                            <h4>{title}</h4>
+                            <p>{summary}</p>
+                        </div>
+                        {button ? (
+                            <button className="btn-secondary">{button}</button>
+                        ) : ""}
+                    </a>
+                </CustomLink>
+            </div>
+        </>
     )
 }
 
