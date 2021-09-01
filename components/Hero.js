@@ -1,7 +1,8 @@
 import styles from '../styles/components/Hero.module.scss'
 import Logo from '../public/images/logo.png'
-import Link from 'next/link'
 import SocmedLists from './SocmedLists'
+import CustomLink from './CustomLink'
+import Image from './Image'
 
 function Hero({ id, title, summary, image, link, button, socmed }) {
     return (
@@ -17,17 +18,17 @@ function Hero({ id, title, summary, image, link, button, socmed }) {
                             </div>
 
                             <div className={styles.heroBtnContainer}>
-                                <Link href={link} as={ process.env.BACKEND_URL + link}>
+                                <CustomLink href={link}>
                                     <a><button className="btn-primary">{button}</button></a>
-                                </Link>
+                                </CustomLink>
                             </div>
                         </div>
 
                         <div>
                             {image ? (
                                 <div className={styles.heroImg}>
-                                <img
-                                    src={`${Logo.src}?lqip-colors[#A4A4A4]`}
+                                <Image
+                                    src={Logo}
                                     alt="hmpl-logo"
                                     width="287"
                                     height="350"

@@ -3,18 +3,21 @@ import Slider from "react-slick";
 import styles from "../styles/components/Carousel.module.scss"
 import SocmedLists from "./SocmedLists";
 import Loading from "./Loading";
-import ChevRight from '../public/icons/chevron-right.svg'
-import ChevLeft from '../public/icons/chevron-left.svg'
+import ChevRight from '/public/icons/chevron-right.svg'
+import ChevLeft from '/public/icons/chevron-left.svg'
+import Image from "./Image";
+import CarouselImg from '/public/images/example-picture.jpeg'
 
 function NextArrow(props) {
     const { onClick } = props;
     return (
         <div className="nextArrow" onClick={onClick}>
-            <img
-                src={`${ChevRight.src}?sprite`}
+            <Image
+                src={ChevRight}
                 alt="chev-right"
                 width="48"
                 height="48"
+                sprite="sprite"
             />
         </div>
     );
@@ -24,11 +27,12 @@ function PrevArrow(props) {
     const { onClick } = props;
     return (
         <div className="prevArrow" onClick={onClick}>
-            <img
-                src={`${ChevLeft.src}?sprite`}
+            <Image
+                src={ChevLeft}
                 alt="chev-left"
                 width="48"
                 height="48"
+                sprite="sprite"
             />
         </div>
     );
@@ -37,7 +41,7 @@ function PrevArrow(props) {
 const pengurusData = Array(20).fill({
     name: "Trio Adi Saputra",
     title: "Ketua Umum",
-    src: "/public/images/example-picture.jpeg",
+    src: CarouselImg,
     socmed: {
         facebook: "https://www.facebook.com/himapala.unesa",
         instagram: "https://www.instagram.com/himapala.unesa/",
@@ -88,8 +92,8 @@ export default class PengurusCarousel extends Component {
                         return (
                             <div key={slide.name}>
                                 <div className={styles.imgCarousel}>
-                                    <img
-                                        src={`${slide.src}?lqip`}
+                                    <Image
+                                        src={slide.src}
                                         alt="carousel-image"
                                         width="210"
                                         height="210"

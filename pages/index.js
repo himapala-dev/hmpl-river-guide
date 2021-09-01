@@ -3,13 +3,14 @@ import Meta from '../components/Meta'
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import styles from '../styles/Home.module.scss';
-import Link from 'next/link'
 import dynamic from 'next/dynamic'
 import Loading from '../components/Loading';
 import BlogCard from '../components/BlogCard';
 import HeroImage from '/public/images/hero-banner.jpg';
 import Logo from '/public/images/logo.png'
 import MailIcon from '/public/icons/mail.svg'
+import Image from '../components/Image';
+import CustomLink from '../components/CustomLink';
 
 const DivisionCard = dynamic(() => import("../components/DivisionCard"), { loading: () => <Loading loading={true} /> })
 const PengurusCarousel = dynamic(() => import('../components/PengurusCarousel'), { loading: () => <Loading loading={true} /> })
@@ -19,8 +20,8 @@ export default function Home() {
     <>
       <div className="topWrapper">
         <div className="bgWrapper">
-          <img
-            src={`${process.env.BACKEND_URL + HeroImage.src}?lqip-colors[#A4A4A4]`}
+          <Image
+            src={HeroImage}
             alt="img-banner"
           />
         </div>
@@ -67,9 +68,9 @@ export default function Home() {
         <div className="container">
           <h1>XPDC 1000 KM Sungai Indonesia</h1>
           <p>Mimpi Himapala untuk Indonesia. Proyek 1000 km bertajuk basis data arung jeram.<br /> Eksplor pengarunganmu disini!!</p>
-          <Link href="/river-guide" as={ process.env.BACKEND_URL + '/river-guide'}>
+          <CustomLink href="/river-guide">
             <a><button className="btn-primary">RIVER GUIDE</button></a>
-          </Link>
+          </CustomLink>
         </div>
       </section>
 
@@ -95,17 +96,18 @@ export default function Home() {
             </div>
           </div>
           <div>
-            <Link href="/tentang-kami#kontak" as={ process.env.BACKEND_URL + '/tentang-kami#kontak'}>
+            <CustomLink href="/tentang-kami#kontak">
               <a>
                 <button className="btn-secondary">
                   Kontak Kami
-                  <img
-                    src={`${MailIcon.src}?sprite`}
+                  <Image
+                    src={MailIcon}
                     alt="mail"
+                    sprite="sprite"
                   />
                 </button>
               </a>
-            </Link>
+            </CustomLink>
           </div>
         </div>
       </section>

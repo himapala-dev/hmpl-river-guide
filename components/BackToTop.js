@@ -1,5 +1,6 @@
-import ChevUp from '../public/icons/chevron-double-up.svg'
+import ChevUp from '/public/icons/chevron-double-up.svg'
 import { useEffect, useState } from "react";
+import Image from './Image';
 
 export default function ScrollButton() {
     const [isVisible, setIsVisible] = useState(false);
@@ -32,11 +33,12 @@ export default function ScrollButton() {
         <>
             {isVisible && (
                 <a onClick={scrollToTop}>
-                    <img
-                        src={`${ChevUp.src}?lqip`}
+                    <Image
+                        src={ChevUp}
                         alt="chev-up"
                         width="35"
                         height="35"
+                        sprite="sprite"
                     />
                 </a>
             )}

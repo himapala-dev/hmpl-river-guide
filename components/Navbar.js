@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from 'react'
 import styles from '../styles/components/Navbar.module.scss'
-import Link from 'next/link'
 import { OutsideClick } from './OutsideClick';
 import { useRouter } from 'next/dist/client/router';
 import useScrollPosition from './UseScrollPosition';
+import CustomLink from './CustomLink';
 
 function Navbar() {
     const toggleRef = useRef(null);
@@ -16,9 +16,9 @@ function Navbar() {
         <nav className={`${router.pathname == "/" ? "" : "bg-blue" && router.pathname == "/blog" ? "" : "bg-blue"} ${scrollPosition > 50 ? "bg-blue" : ""}`}>
             <div className="container">
                 <div className={styles.logo}>
-                    <Link href="/" as={ process.env.BACKEND_URL + '/'}>
+                    <CustomLink href="/">
                         <a>Himapala Unesa</a>
-                    </Link>
+                    </CustomLink>
                 </div>
 
                 <div className={styles.toggle} onClick={onClick}>
@@ -32,24 +32,24 @@ function Navbar() {
                 <div className={`${styles.menu} ${isActive ? styles.active : ""}`} ref={toggleRef}>
                     <ul className={`${isActive ? styles.active : ""}`} ref={toggleRef}>
                         <li>
-                            <Link href="/" as={ process.env.BACKEND_URL + '/'}>
+                            <CustomLink href="/">
                                 <a className={router.pathname == "/" ? styles.choosen : ""}>Home</a>
-                            </Link>
+                            </CustomLink>
                         </li>
                         <li>
-                            <Link href="/tentang-kami" as={ process.env.BACKEND_URL + '/tentang-kami'}>
+                            <CustomLink href="/tentang-kami">
                                 <a className={router.pathname == "/tentang-kami" ? styles.choosen : ""}>Tentang Kami</a>
-                            </Link>
+                            </CustomLink>
                         </li>
                         <li>
-                            <Link href="/blog" as={ process.env.BACKEND_URL + '/blog'}>
+                            <CustomLink href="/blog">
                                 <a className={router.pathname == "/blog" ? styles.choosen : ""}>Blog</a>
-                            </Link>
+                            </CustomLink>
                         </li>
                         <li>
-                            <Link href="/river-guide" as={ process.env.BACKEND_URL + '/river-guide'}>
+                            <CustomLink href="/river-guide">
                                 <a><button className="btn-primary">RIVER GUIDE</button></a>
-                            </Link>
+                            </CustomLink>
                         </li>
                     </ul>
                 </div>

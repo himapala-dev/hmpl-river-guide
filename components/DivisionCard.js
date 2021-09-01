@@ -1,31 +1,37 @@
 import React from 'react'
 import styles from '../styles/components/DivisionCard.module.scss'
-import Link from 'next/link'
+import CustomLink from './CustomLink'
+import Image from './Image'
+import HeroImg from '/public/images/hero-banner.jpg'
+import GhImg from '/public/images/gh.jpg'
+import RcImg from '/public/images/rc.jpg'
+import CavingImg from '/public/images/caving.jpg'
+import DivingImg from '/public/images/diving.jpg'
 
 const divisionData = [{
     title: "Arung Jeram",
     summary: "Siapkan pengarunganmu. Tantang jerammu!",
-    image: "hero-banner.jpg"
+    image: HeroImg
 },
 {
     title: "Gunung Hutan",
     summary: "Pijakan jejak, gegapkan langkah!",
-    image: "gh.jpg"
+    image: GhImg
 },
 {
     title: "Panjat Tebing",
     summary: "Berkawan kepal karst dan andesit.",
-    image: "rc.jpg"
+    image: RcImg
 },
 {
     title: "Susur Gua",
     summary: "Merayap meyelami zona gelap abadi.",
-    image: "caving.jpg"
+    image: CavingImg
 },
 {
     title: "Selam",
     summary: "Sedalam hati laut, diam tak berbatas",
-    image: "diving.jpg"
+    image: DivingImg
 },
 ]
 
@@ -38,8 +44,8 @@ function DivisionCard() {
                         <div className={`${e.title == "Arung Jeram" ? styles.cardDivision : styles.raftingCard}`}>
                             <div className={styles.cardThumbnail}>
                                 <div className={styles.bgWrapper}>
-                                    <img
-                                        src={`/public/images/${e.image}?lqip`}
+                                    <Image
+                                        src={e.image}
                                         alt="division img"
                                     />
                                 </div>
@@ -48,11 +54,11 @@ function DivisionCard() {
                                         <h4>{e.title}</h4>
                                         <p>{e.summary}</p>
                                         {e.title == "Arung Jeram" ? (
-                                            <Link href="/river-guide" as={ process.env.BACKEND_URL + '/river-guide'}>
+                                            <CustomLink href="/river-guide">
                                                 <a>
                                                     <button className="btn-primary">RIVER GUIDE</button>
                                                 </a>
-                                            </Link>
+                                            </CustomLink>
                                         ) : ""}
                                     </div>
                                 </div>

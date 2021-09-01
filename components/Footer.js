@@ -1,7 +1,8 @@
-import Link from 'next/link'
 import ScrollButton from './BackToTop';
 import SocmedLists from './SocmedLists'
 import Logo from '../public/images/logo.png'
+import CustomLink from './CustomLink';
+import Image from './Image';
 
 function Footer() {
     return (
@@ -20,24 +21,24 @@ function Footer() {
                             <h4>Tentang Kami</h4>
                             <ul>
                                 <li>
-                                    <Link href='/tentang-kami#sejarah' as={ process.env.BACKEND_URL + '/tentang-kami#sejarah'}>
+                                    <CustomLink href='/tentang-kami#sejarah'>
                                         <a>Sejarah</a>
-                                    </Link>
+                                    </CustomLink>
                                 </li>
                                 <li>
-                                    <Link href='/tentang-kami#pengurus' as={ process.env.BACKEND_URL + '/tentang-kami#pengurus'}>
+                                    <CustomLink href='/tentang-kami#pengurus'>
                                         <a>Pengurus</a>
-                                    </Link>
+                                    </CustomLink>
                                 </li>
                                 <li>
-                                    <Link href='/tentang-kami#rekamjejak' as={ process.env.BACKEND_URL + '/tentang-kami#rekamjejak'}>
+                                    <CustomLink href='/tentang-kami#rekamjejak'>
                                         <a>Rekam Jejak</a>
-                                    </Link>
+                                    </CustomLink>
                                 </li>
                                 <li>
-                                    <Link href='/tentang-kami#kontak' as={ process.env.BACKEND_URL + '/tentang-kami#kontak'}>
+                                    <CustomLink href='/tentang-kami#kontak'>
                                         <a>Kontak Kami</a>
-                                    </Link>
+                                    </CustomLink>
                                 </li>
                             </ul>
                         </div>
@@ -45,30 +46,30 @@ function Footer() {
                             <h4>Halaman</h4>
                             <ul>
                                 <li>
-                                    <Link href='/tentang-kami#syarat' as={ process.env.BACKEND_URL + '/tentang-kami#syarat'}>
+                                    <CustomLink href='/tentang-kami#syarat'>
                                         <a>Syarat dan Ketentuan</a>
-                                    </Link>
+                                    </CustomLink>
                                 </li>
                                 <li>
-                                    <Link href='/tentang-kami#privasi' as={ process.env.BACKEND_URL + '/tentang-kami#privasi'}>
+                                    <CustomLink href='/tentang-kami#privasi'>
                                         <a>Aturan Privasi</a>
-                                    </Link>
+                                    </CustomLink>
                                 </li>
                                 <li>
-                                    <Link href='/tentang-kami#disclaimer' as={ process.env.BACKEND_URL + '/tentang-kami#disclaimer'}>
+                                    <CustomLink href='/tentang-kami#disclaimer'>
                                         <a>Disclaimer</a>
-                                    </Link>
+                                    </CustomLink>
                                 </li>
                                 <li>
-                                    <Link href='/administrator' as={ process.env.BACKEND_URL + '/tentang-kami#administrator'}>
+                                    <CustomLink href='/administrator'>
                                         <a>Administrator</a>
-                                    </Link>
+                                    </CustomLink>
                                 </li>
                             </ul>
                         </div>
                         <div>
-                            <img
-                                src={`${Logo.src}?lqip`}
+                            <Image
+                                src={Logo}
                                 alt="hmpl-logo"
                                 width="143"
                                 height="175"
