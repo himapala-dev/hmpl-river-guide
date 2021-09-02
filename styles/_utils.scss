@@ -158,3 +158,13 @@
     }
   }
 }
+
+#docsLayout {
+  &.grid-col {
+    &.two {
+      @include breakpoint(md) {
+        grid-template-columns: auto 1fr;
+      }
+    }
+  }
+}
