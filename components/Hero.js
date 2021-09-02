@@ -9,7 +9,7 @@ function Hero({ id, title, summary, image, link, button, socmed }) {
         <>
             <section id={id} className={styles.hero}>
                 <div className="container">
-                    <div className={styles.heroInside}>
+                    <div className={`${styles.heroInside} text-center`}>
 
                         <div>
                             <div className={styles.heroText}>
@@ -19,7 +19,7 @@ function Hero({ id, title, summary, image, link, button, socmed }) {
 
                             <div className={styles.heroBtnContainer}>
                                 <CustomLink href={link}>
-                                    <a><button className="btn-primary">{button}</button></a>
+                                    <a><button className="btn-primary center">{button}</button></a>
                                 </CustomLink>
                             </div>
                         </div>
@@ -27,13 +27,13 @@ function Hero({ id, title, summary, image, link, button, socmed }) {
                         <div>
                             {image ? (
                                 <div className={styles.heroImg}>
-                                <Image
-                                    src={Logo}
-                                    alt="hmpl-logo"
-                                    width="287"
-                                    height="350"
-                                />
-                            </div>
+                                    <Image
+                                        src={Logo}
+                                        alt="hmpl-logo"
+                                        width="287"
+                                        height="350"
+                                    />
+                                </div>
                             ) : ""}
 
                             <div className={styles.heroSoc}>{socmed == true ? (

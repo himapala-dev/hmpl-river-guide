@@ -48,9 +48,9 @@ export default function Home() {
 
       {/* Division Card */}
       <section id="divisi">
-        <div className="container">
+        <div className="container text-center">
           <div className="heading-line center">
-            <div className="line"></div>
+            <div className="line center"></div>
             <h1>5 Divisi</h1>
             <p>5 konsentrasi peminatan, pelatihan ruang, lapangan oleh instruktur dan alumni. Mendayagunakan anggota tiap divisi mencapai profesionalitas olahraga alam, beretika lingkungan, dan berwawasan kemasyarakatan.</p>
           </div>
@@ -74,7 +74,7 @@ export default function Home() {
         <video autoPlay muted loop id="myVideo" loading="lazy" preload="auto" playsInline className="styles.videoBanner">
           <source src={`${process.env.BACKEND_URL}/videos/1000km.mp4`} type="video/mp4" />
         </video>
-        <div className="container">
+        <div className="container text-center">
           <h1>XPDC 1000 KM Sungai Indonesia</h1>
           <p>Mimpi Himapala untuk Indonesia. Proyek 1000 km bertajuk basis data arung jeram. Eksplor pengarunganmu disini!!</p>
           <CustomLink href="/river-guide">
@@ -86,8 +86,8 @@ export default function Home() {
       {/* Blog Card */}
       <section id="blog">
         <div className="container">
-          <div className="heading-line center">
-            <div className="line"></div>
+          <div className="heading-line text-center center">
+            <div className="line center"></div>
             <h1>Blog</h1>
           </div>
           <div className={styles.cardBlogContainer}>
@@ -105,7 +105,7 @@ export default function Home() {
           </div>
           <CustomLink href="/blog">
             <a>
-              <button className="btn-secondary">Lihat Semua
+              <button className="btn-secondary center">Lihat Semua
                 <Image
                   src={RightArrow}
                   alt="right-arrow"

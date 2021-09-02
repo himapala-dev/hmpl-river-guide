@@ -48,7 +48,7 @@ function Navbar() {
                         </li>
                         <li>
                             <CustomLink href="/river-guide">
-                                <a><button className="btn-primary">RIVER GUIDE</button></a>
+                                <a><button className="btn-primary center">RIVER GUIDE</button></a>
                             </CustomLink>
                         </li>
                     </ul>

@@ -12,59 +12,25 @@
     "caving"
     "selam";
   gap: 35px;
-  transition: all 0.5s;
+  transition: $transition4s;
   margin-top: 50px;
-
-  @include breakpoint(md) {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto auto;
-    grid-template-areas:
-      "rafting gh caving"
-      "rafting rc selam";
-  }
 
   > div {
     .cardThumbnail {
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      @include flexWrapper(200px);
       cursor: default;
-      width: 100%;
-      height: 100%;
-      min-height: 200px;
-
-      @include breakpoint(xl) {
-        min-height: 350px;
-      }
 
       .bgWrapper {
-        display: block;
-        overflow: hidden;
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        margin: 0;
+        @include bgWrapper;
         z-index: -1;
-        filter: brightness(25%);
-        border-radius: 20px;
 
         img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          object-position: center;
+          @include coverImg;
         }
       }
 
       &:hover {
-        transition: all 0.5s;
-
-        @include breakpoint(md) {
-          transform: scale(1.1);
-        }
+        transition: $transition4s;
       }
     }
 
@@ -72,16 +38,8 @@
       margin: 15px;
       color: white;
 
-      .textInside {
-        text-align: center;
-        button {
-          margin-left: auto;
-          margin-right: auto;
-        }
-
-        h4 {
-          margin: 0;
-        }
+      h4 {
+        margin: 0;
       }
     }
 
@@ -99,6 +57,34 @@
     }
     &:last-child {
       grid-area: selam;
+    }
+  }
+}
+
+@include breakpoint(md) {
+  .divisionLists {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "rafting gh caving"
+      "rafting rc selam";
+
+    > div {
+      .cardThumbnail {
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
+
+@include breakpoint(xl) {
+  .divisionLists {
+    > div {
+      .cardThumbnail {
+        min-height: 350px;
+      }
     }
   }
 }

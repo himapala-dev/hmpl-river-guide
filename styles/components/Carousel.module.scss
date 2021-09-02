@@ -3,9 +3,6 @@
 
 .pengurusCarousel {
   margin-top: 35px;
-  @include breakpoint(md) {
-    margin-top: 50px;
-  }
 
   .profilePhoto {
     border-radius: 50%;
@@ -16,25 +13,8 @@
     object-fit: cover;
     object-position: center;
 
-    @media screen and (max-width: 300px) {
-      min-width: 100px;
-      min-height: 100px;
-    }
-
-    @include breakpoint(md) {
-      min-width: 150px;
-      min-height: 150px;
-    }
-    @include breakpoint(lg) {
-      min-width: 210px;
-      min-height: 210px;
-    }
     &:hover {
-      transition: all 0.5s;
-
-      @include breakpoint(md) {
-        transform: scale(0.9);
-      }
+      transition: $transition4s;
     }
   }
 
@@ -49,9 +29,8 @@
     img {
       filter: $mutedFilter;
 
-      @media screen and (max-width: 340px) {
-        width: 25px;
-        height: 25px;
+      &:hover {
+        filter: $whiteHoverFilter;
       }
     }
   }
@@ -73,15 +52,59 @@
   margin-left: auto;
   margin-right: auto;
   padding: 5px;
+}
 
-  @media screen and (max-width: 340px) {
+@media screen and (max-width: 300px) {
+  .pengurusCarousel {
+    .profilePhoto {
+      min-width: 100px;
+      min-height: 100px;
+    }
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .pengurusCarousel {
+    .carouselSoc {
+      img {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+
+  .imgCarousel {
     border: none;
     max-width: 100%;
     max-height: 100%;
     padding: 0;
   }
+}
 
-  @include breakpoint(lg) {
+@include breakpoint(md) {
+  .pengurusCarousel {
+    margin-top: 50px;
+
+    .profilePhoto {
+      min-width: 150px;
+      min-height: 150px;
+
+      &:hover {
+        transform: scale(0.9);
+      }
+    }
+  }
+}
+
+@include breakpoint(lg) {
+  .pengurusCarousel {
+    .profilePhoto {
+      min-width: 210px;
+      min-height: 210px;
+    }
+  }
+
+  .imgCarousel {
     max-width: 215px;
     max-height: 215px;
   }
