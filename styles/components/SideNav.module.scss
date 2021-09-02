@@ -1,0 +1,43 @@
+@import '../mixins';
+@import '../variables';
+
+.sideNav {
+    color: black;
+    background-color: $semiMuted;
+    width: 100%;
+    height: max-content;
+    border-radius: 0 0 20px 20px;
+
+    h4 {
+        margin: 0;
+    }
+
+    @include breakpoint(md) {
+        width: max-content;
+        height: 100vh;
+        border-radius: 0 20px 20px 0;
+
+        h4 {
+            margin: 35px 0;
+        }
+    }
+
+    .menu {
+        list-style-type: none;
+        padding-left: 0;
+        display: none;
+
+        li {
+            margin: 18px 0;
+        }
+
+        .submenu {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+
+        @include breakpoint(md) {
+            display: block;
+        }
+    }
+}

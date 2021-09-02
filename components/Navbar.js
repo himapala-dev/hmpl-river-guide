@@ -13,7 +13,7 @@ function Navbar() {
     const router = useRouter();
 
     return (
-        <nav className={`${router.pathname == "/" ? "" : "bg-blue" && router.pathname == "/blog" ? "" : "bg-blue"} ${scrollPosition > 50 ? "bg-blue" : ""}`}>
+        <nav className={`${router.pathname == "/" ? "" : "bg-blue" && router.pathname == "/blog" ? "" : "bg-blue"} ${scrollPosition > 50 ? "bg-blue" : ""} ${isActive ? "bg-blue" : ""}`}>
             <div className="container">
                 <div className={styles.logo}>
                     <CustomLink href="/">

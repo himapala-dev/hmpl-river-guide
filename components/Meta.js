@@ -134,7 +134,7 @@ Meta.defaultProps = {
     altImage: "logo",
     keywords: 'mapala, unesa, himapala, river guide, rafting, ekspedisi',
     description: 'Himpunan Mahasiswa Pencinta Alam Universitas Negeri Surabaya.',
-    urlWeb: "https://hmpl-river-guide.vercel.app",
+    urlWeb: "https://himapala.unesa.ac.id",
     type: "website",
 }
 
