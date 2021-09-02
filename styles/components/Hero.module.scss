@@ -3,25 +3,9 @@
 
 .hero {
   position: relative;
-
   .heroInside {
-    text-align: center;
-
-    button {
-      margin-left: auto;
-      margin-right: auto;
-
-      @include breakpoint(lg) {
-        margin-left: 0;
-        margin-right: 0;
-      }
-    }
-
     .heroText {
-      p,
-      h1 {
-        color: white;
-      }
+      color: white;
 
       p {
         margin: 15px 0 50px;
@@ -29,6 +13,7 @@
 
       h1 {
         margin-bottom: 0;
+        color: white;
       }
     }
 
@@ -37,11 +22,9 @@
     }
 
     .heroSoc {
+      display: flex;
+      justify-content: space-evenly;
       padding: 35px 0;
-
-      a {
-        padding: 0 15px;
-      }
 
       img {
         filter: $whiteFilter;
@@ -52,27 +35,31 @@
       }
     }
   }
+}
 
-  @include breakpoint(md) {
+@include breakpoint(md) {
+  .hero {
     .heroInside {
       display: grid;
       grid-template-columns: 1fr 1fr;
 
-      @include breakpoint(lg) {
-        text-align: left;
-        padding: 0 0 0 75px;
-
-        .heroSoc {
-          text-align: center;
-        }
-      }
-
       .heroImg {
         display: block;
+      }
+    }
+  }
+}
 
-        @include breakpoint(lg) {
-          text-align: center;
-        }
+@include breakpoint(lg) {
+  .hero {
+    .heroInside {
+      padding: 0 0 0 75px;
+      button {
+        margin-left: 0;
+        margin-right: 0;
+      }
+      .heroText {
+        text-align: left;
       }
     }
   }

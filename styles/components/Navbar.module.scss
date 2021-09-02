@@ -8,10 +8,6 @@
     font-size: 2rem;
     font-weight: bold;
     text-transform: uppercase;
-
-    @include breakpoint(xxxs) {
-      font-size: 1.5rem;
-    }
   }
 }
 
@@ -23,32 +19,17 @@
   z-index: 100;
   width: 100%;
   height: 0;
-  transition: height 300ms linear;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-
-  @include breakpoint(md) {
-    height: 100%;
-    position: relative;
-    width: 600px;
-    top: 0;
-    background-color: transparent;
-    box-shadow: none;
-  }
+  transition: $heightTransition;
+  box-shadow: $shadow20;
 
   &.active {
     height: 225px;
   }
+
   ul {
     list-style-type: none;
     display: none;
-    transition: height 300ms linear;
-
-    @include breakpoint(md) {
-      display: flex;
-      margin-left: 25px;
-      flex-direction: row;
-      justify-content: flex-end;
-    }
+    transition: $heightTransition;
 
     &.active {
       display: block;
@@ -58,15 +39,6 @@
     li {
       text-align: center;
       margin: 25px auto;
-
-      button {
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      @include breakpoint(md) {
-        margin: auto 15px;
-      }
 
       &:not(:last-child) {
         a {
@@ -107,11 +79,6 @@
   top: 10px;
   background-color: transparent;
   position: absolute;
-  display: block;
-
-  @include breakpoint(md) {
-    display: none;
-  }
 
   .toggler {
     width: 100%;
@@ -120,6 +87,8 @@
     outline: 0;
     border: none;
     cursor: pointer;
+    display: block;
+    box-shadow: none;
 
     &:hover {
       span:nth-of-type(1),
@@ -132,7 +101,7 @@
     &.active {
       span:nth-of-type(1) {
         transform: rotate3d(0, 0, 1, 45deg);
-        transition: all 0.4s;
+        transition: $transition4s;
         margin: 0;
       }
       span:nth-of-type(2) {
@@ -140,7 +109,7 @@
       }
       span:nth-of-type(3) {
         transform: rotate3d(0, 0, 1, -45deg);
-        transition: all 0.4s;
+        transition: $transition4s;
         margin: 0;
       }
     }
@@ -150,8 +119,42 @@
       height: 2px;
       display: block;
       background-color: white;
-      margin: 10px 0;
-      transition: all 0.4s;
+      margin: 7px 0;
+      transition: $transition4s;
+    }
+  }
+}
+
+@include breakpoint(md) {
+  .menu {
+    height: 100%;
+    position: relative;
+    width: 600px;
+    top: 0;
+    background-color: transparent;
+    box-shadow: none;
+
+    ul {
+      display: flex;
+      margin-left: 25px;
+      flex-direction: row;
+      justify-content: flex-end;
+
+      li {
+        margin: auto 15px;
+      }
+    }
+  }
+
+  .toggle {
+    display: none;
+  }
+}
+
+@include breakpoint(xxxs) {
+  .logo {
+    a {
+      font-size: 1.5rem;
     }
   }
 }

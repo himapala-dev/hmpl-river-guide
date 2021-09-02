@@ -16,6 +16,15 @@ $mutedFilter: brightness(0) saturate(100%) invert(66%) sepia(0%) saturate(7340%)
 $primaryFont: "Roboto", sans-serif;
 $secondaryFont: "Open Sans", sans-serif;
 
+// Transitions
+$heightTransition: height 300ms linear;
+$transition4s: all 0.4s;
+
+// Box Shadow
+$shadow20: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+$shadow10: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+
+// Carousel
 $slide-count: 5;
 $slide-width: 30rem;
 

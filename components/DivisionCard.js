@@ -43,20 +43,21 @@ function DivisionCard() {
                     <React.Fragment key={i}>
                         <div className={`${e.title == "Arung Jeram" ? styles.cardDivision : styles.raftingCard}`}>
                             <div className={styles.cardThumbnail}>
-                                <div className={styles.bgWrapper}>
+                                <div className={`${styles.bgWrapper} radius-20`}>
                                     <Image
                                         src={e.image}
                                         alt="division img"
+                                        className="cover"
                                     />
                                 </div>
                                 <div className={styles.cardText}>
-                                    <div className={styles.textInside}>
+                                    <div className="text-center">
                                         <h4>{e.title}</h4>
                                         <p>{e.summary}</p>
                                         {e.title == "Arung Jeram" ? (
                                             <CustomLink href="/river-guide">
                                                 <a>
-                                                    <button className="btn-primary">RIVER GUIDE</button>
+                                                    <button className="btn-primary center">RIVER GUIDE</button>
                                                 </a>
                                             </CustomLink>
                                         ) : ""}

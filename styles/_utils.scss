@@ -25,26 +25,26 @@
   @include breakpoint(md) {
     max-height: 648px;
   }
+}
 
-  .bgWrapper {
-    display: block;
-    position: absolute;
-    overflow: hidden;
-    filter: brightness(25%);
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: 0;
-    height: 100%;
+.bgWrapper {
+  @include bgWrapper;
+  height: 100%;
 
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
-    }
+  img {
+    @include coverImg;
   }
+}
+
+.cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.radius-20 {
+  border-radius: 20px;
 }
 
 .grid-col {
@@ -94,17 +94,6 @@
     margin: 0;
     max-width: 720px;
   }
-
-  &.center {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-
-    .line {
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
 }
 
 .line {
@@ -116,8 +105,6 @@
 #blog {
   button {
     margin-top: 35px;
-    margin-right: auto;
-    margin-left: auto;
 
     @include breakpoint(md) {
       margin-top: 50px;
@@ -133,7 +120,6 @@
     align-items: center;
     gap: 20px;
     &.two {
-
       button {
         img {
           margin-right: 0;
@@ -147,33 +133,19 @@
 }
 
 #xpdc {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  min-height: 360px;
-  width: 100%;
-  overflow: hidden;
-
+  @include flexWrapper(360px);
   video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    @include bgWrapper;
     min-width: 100%;
     min-height: 100%;
     height: auto;
     width: auto;
     z-index: -100;
-    filter: brightness(25%);
   }
 
   .container {
     position: relative;
     color: white;
-    text-align: center;
     max-width: 500px;
 
     button {
