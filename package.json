@@ -4,14 +4,15 @@
   "homepage": "http://himapala-dev.github.io/hmpl-river-guide",
   "private": true,
   "scripts": {
-    "server": "next build && set NODE_ENV=production node server.js",
+    "server": "node server.js",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "export": "next export",
     "post-update": "yarn upgrade --latest",
-    "deploy": "rm -rf node_modules/.cache && rimraf out && next build && next export && touch out/.nojekyll && gh-pages -d out -t true"
+    "predeploy": "rm -rf node_modules/.cache && rimraf out && next build && set NODE_ENV=production node server.js && next export && touch out/.nojekyll",
+    "deploy": "gh-pages -d out -t true"
   },
   "dependencies": {
     "babel-plugin-transform-define": "^2.0.0",

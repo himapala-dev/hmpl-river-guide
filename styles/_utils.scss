@@ -159,12 +159,25 @@
   }
 }
 
+.sideNavContainer {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
 #docsLayout {
-  &.grid-col {
-    &.two {
-      @include breakpoint(md) {
-        grid-template-columns: auto 1fr;
-      }
+  @include breakpoint(md) {
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
+}
+
+#docs {
+  nav {
+    position: relative;
+
+    @include breakpoint(md) {
+      position: sticky;
     }
   }
 }
