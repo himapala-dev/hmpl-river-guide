@@ -3,7 +3,7 @@ const withOffline = require("next-offline");
 const withPWA = require('next-pwa');
 const withPlugins = require('next-compose-plugins');
 const optimizedImages = require('next-optimized-images');
-const debug = process.env.NODE_ENV !== "production";
+// const debug = process.env.NODE_ENV !== "production";
 
 const plugin = withPlugins([
   [optimizedImages, {
@@ -18,8 +18,8 @@ const plugin = withPlugins([
 const nextConfig = {};
 
 module.exports = {
-  basePath: !debug ? '/hmpl-river-guide' : '',
-  assetPrefix: !debug ? '/hmpl-river-guide' : '',
+  // basePath: !debug ? '/hmpl-river-guide' : '',
+  // assetPrefix: !debug ? '/hmpl-river-guide' : '',
   withOffline: nextConfig,
   reactStrictMode: true,
   plugin,
