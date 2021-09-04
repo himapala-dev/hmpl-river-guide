@@ -1,43 +1,63 @@
-@import '../mixins';
-@import '../variables';
+@import "../mixins";
+@import "../variables";
 
 .sideNav {
-    color: black;
-    background-color: $semiMuted;
-    width: 100%;
-    height: max-content;
-    border-radius: 0 0 20px 20px;
+  color: black;
+  background-color: $semiMuted;
+  width: 100%;
+  height: max-content;
+  border-radius: 0 0 20px 20px;
+
+  .headerSideNav {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 
     h4 {
-        margin: 0;
+      margin: 0;
+    }
+
+    img {
+      margin-left: 15px;
+    }
+  }
+
+  @include breakpoint(md) {
+    width: max-content;
+    height: 100vh;
+    border-radius: 0 20px 20px 0;
+    padding: 35px 0;
+    position: static;
+
+    .headerSideNav {
+      img {
+        display: none;
+      }
+    }
+  }
+
+  .menu {
+    list-style-type: none;
+    padding-left: 0;
+    display: none;
+
+    li {
+      margin: 35px 0;
+
+      a {
+        &:hover {
+          color: $primaryColor;
+        }
+      }
+    }
+
+    .submenu {
+      list-style-type: none;
+      padding-left: 20px;
     }
 
     @include breakpoint(md) {
-        width: max-content;
-        height: 100vh;
-        border-radius: 0 20px 20px 0;
-
-        h4 {
-            margin: 35px 0;
-        }
+      display: block;
     }
-
-    .menu {
-        list-style-type: none;
-        padding-left: 0;
-        display: none;
-
-        li {
-            margin: 18px 0;
-        }
-
-        .submenu {
-            list-style-type: none;
-            padding-left: 20px;
-        }
-
-        @include breakpoint(md) {
-            display: block;
-        }
-    }
+  }
 }

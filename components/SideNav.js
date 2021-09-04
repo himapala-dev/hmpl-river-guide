@@ -1,6 +1,8 @@
 import React from 'react'
 import CustomLink from './CustomLink'
 import styles from '../styles/components/SideNav.module.scss'
+import Image from './Image'
+import ChevRight from '/public/icons/chevron-right.svg'
 
 function SideNav() {
     return (
@@ -8,6 +10,13 @@ function SideNav() {
             <div className="container">
                 <div className={styles.headerSideNav}>
                     <h4>Daftar Isi</h4>
+                    <Image
+                        src={ChevRight}
+                        alt="chev-right"
+                        width="16"
+                        height="16"
+                        sprite="sprite"
+                    />
                 </div>
                 <ul className={styles.menu}>
                     <li>
@@ -17,22 +26,22 @@ function SideNav() {
                     </li>
                     <li>
                         <CustomLink href="/tentang-kami">
-                            <a>Himapala Unesa</a>
+                            <a>Sejarah</a>
                         </CustomLink>
                     </li>
                     <li>
                         <CustomLink href="/tentang-kami">
-                            <a>Himapala Unesa</a>
+                            <a>Pengurus</a>
                         </CustomLink>
                     </li>
                     <li>
                         <CustomLink href="/tentang-kami">
-                            <a>Himapala Unesa</a>
+                            <a>Rekam Jejak</a>
                         </CustomLink>
                     </li>
                     <li>
                         <CustomLink href="/tentang-kami">
-                            <a>Himapala Unesa</a>
+                            <a>Kontak Kami</a>
                         </CustomLink>
                     </li>
                     <li>
@@ -45,12 +54,12 @@ function SideNav() {
                             </li>
                             <li>
                                 <CustomLink href="/tentang-kami">
-                                    <a>Syarat dan Ketentuan</a>
+                                    <a>Aturan Privasi</a>
                                 </CustomLink>
                             </li>
                             <li>
                                 <CustomLink href="/tentang-kami">
-                                    <a>Syarat dan Ketentuan</a>
+                                    <a>Disclaimer</a>
                                 </CustomLink>
                             </li>
                         </ul>

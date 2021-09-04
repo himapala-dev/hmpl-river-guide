@@ -8,12 +8,16 @@ const Documentation = (props) => {
     return (
         <>
             <Meta />
-            <Navbar />
-            <div id="docsLayout" className="grid-col two">
-                <SideNav />
-                {props.children}
+            <div id="docs">
+                <Navbar />
+                <div id="docsLayout">
+                    <div className="sideNavContainer">
+                        <SideNav />
+                    </div>
+                    {props.children}
+                </div>
+                <Footer />
             </div>
-            <Footer />
         </>
     )
 }
