@@ -19,6 +19,7 @@
 
     img {
       margin-left: 15px;
+      transition: $transition4s;
     }
   }
 
@@ -30,10 +31,28 @@
     position: static;
 
     .headerSideNav {
+      cursor: default;
       img {
         display: none;
       }
     }
+  }
+
+  .rotate90 {
+    transform: rotate(90deg);
+    transition: $transition4s;
+  }
+
+  .active {
+    display: block !important;
+    padding-bottom: 15px;
+  }
+
+  .bullets {
+    list-style-type: disc;
+    list-style-position: inside;
+    font-weight: bold;
+    color: $primaryColor;
   }
 
   .menu {
@@ -42,7 +61,11 @@
     display: none;
 
     li {
-      margin: 35px 0;
+      margin: 0 0 35px 0;
+
+      @include breakpoint(md) {
+        margin: 35px 0;
+      }
 
       a {
         &:hover {
@@ -54,6 +77,10 @@
     .submenu {
       list-style-type: none;
       padding-left: 20px;
+
+      li {
+        margin: 35px 0;
+      }
     }
 
     @include breakpoint(md) {

@@ -11,9 +11,7 @@ const Documentation = (props) => {
             <div id="docs">
                 <Navbar />
                 <div id="docsLayout">
-                    <div className="sideNavContainer">
-                        <SideNav />
-                    </div>
+                    <SideNav />
                     {props.children}
                 </div>
                 <Footer />

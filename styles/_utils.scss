@@ -159,10 +159,13 @@
   }
 }
 
-.sideNavContainer {
-  position: sticky;
+.sticky {
+  position: fixed;
   top: 0;
-  z-index: 99;
+
+  @include breakpoint(md) {
+    position: relative;
+  }
 }
 
 #docsLayout {
