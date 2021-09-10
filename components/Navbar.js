@@ -38,7 +38,12 @@ function Navbar() {
                         </li>
                         <li>
                             <CustomLink href="/tentang-kami">
-                                <a className={router.pathname == "/tentang-kami" ? styles.choosen : ""}>Tentang Kami</a>
+                                <a className=
+                                    {
+                                        router.pathname == "/tentang-kami" ? styles.choosen : router.pathname == "/tentang-kami/sejarah" ? styles.choosen : router.pathname == "/tentang-kami/pengurus" ? styles.choosen : router.pathname == "/tentang-kami/kontak" ? styles.choosen : router.pathname == "/tentang-kami/syarat" ? styles.choosen : router.pathname == "/tentang-kami/privasi" ? styles.choosen : router.pathname == "/tentang-kami/disclaimer" ? styles.choosen : router.pathname == "/tentang-kami/rekamjejak" ? styles.choosen : ""
+                                    }>
+                                    Tentang Kami
+                                </a>
                             </CustomLink>
                         </li>
                         <li>

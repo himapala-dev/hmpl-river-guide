@@ -74,7 +74,7 @@ nav {
     padding: 25px 0;
 
     &.bg-blue {
-      padding: 10px 0;
+      padding: 0;
     }
 
     .container {
@@ -194,6 +194,10 @@ button {
   img {
     filter: $whiteFilter;
     margin: 0 0 0 15px;
+
+    &.btnImgLeft {
+      margin: 0 15px 0 0;
+    }
   }
 
   &.btn-primary {
@@ -204,6 +208,12 @@ button {
     &:hover {
       background-color: $whiteHover;
     }
+  }
+
+  &.btn-muted {
+    color: white;
+    background-color: $muted;
+    padding: 0 15px;
   }
 
   &.outline {

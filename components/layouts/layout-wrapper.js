@@ -1,11 +1,13 @@
 import DefaultLayout from "./default";
 import AdminLayout from "./admin";
 import Documentation from './docs';
+import River from './river';
 
 const layouts = {
     default: DefaultLayout,
     admin: AdminLayout,
-    docs: Documentation
+    docs: Documentation,
+    guide: River,
 };
 
 const LayoutWrapper = (props) => {
