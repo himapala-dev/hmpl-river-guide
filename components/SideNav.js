@@ -29,46 +29,46 @@ function SideNav() {
                     />
                 </div>
                 <ul className={`${styles.menu} ${isActive ? styles.active : ""}`} ref={toggleRef}>
-                    <li className={router.pathname == "/tentang-kami" ? styles.bullets : ""}>
+                    <li className={router.pathname == "/tentang-kami" ? styles.bullets : ""} onClick={onClick}>
                         <CustomLink href="/tentang-kami">
                             <a>Himapala Unesa</a>
                         </CustomLink>
                     </li>
-                    <li className={onClick && router.pathname == "/tentang-kami#sejarah" ? styles.bullets : ""}>
-                        <CustomLink href="/tentang-kami#sejarah">
+                    <li className={router.pathname == "/tentang-kami/sejarah" ? styles.bullets : ""} onClick={onClick}>
+                        <CustomLink href="/tentang-kami/sejarah">
                             <a>Sejarah</a>
                         </CustomLink>
                     </li>
-                    <li className={router.pathname == "/tentang-kami#pengurus" ? styles.bullets : ""}>
-                        <CustomLink href="/tentang-kami#pengurus">
+                    <li className={router.pathname == "/tentang-kami/pengurus" ? styles.bullets : ""} onClick={onClick}>
+                        <CustomLink href="/tentang-kami/pengurus">
                             <a>Pengurus</a>
                         </CustomLink>
                     </li>
-                    <li className={router.pathname == "/tentang-kami#rekamjejak" ? styles.bullets : ""}>
-                        <CustomLink href="/tentang-kami#rekamjejak">
+                    <li className={router.pathname == "/tentang-kami/rekamjejak" ? styles.bullets : ""} onClick={onClick}>
+                        <CustomLink href="/tentang-kami/rekamjejak">
                             <a>Rekam Jejak</a>
                         </CustomLink>
                     </li>
-                    <li className={router.pathname == "/tentang-kami#kontak" ? styles.bullets : ""}>
-                        <CustomLink href="/tentang-kami#kontak">
+                    <li className={router.pathname == "/tentang-kami/kontak" ? styles.bullets : ""} onClick={onClick}>
+                        <CustomLink href="/tentang-kami/kontak">
                             <a>Kontak Kami</a>
                         </CustomLink>
                     </li>
                     <li>
                         <b>Halaman</b>
                         <ul className={styles.submenu}>
-                            <li className={router.pathname == "/tentang-kami#syarat" ? styles.bullets : ""}>
-                                <CustomLink href="/tentang-kami#syarat">
+                            <li className={router.pathname == "/tentang-kami/syarat" ? styles.bullets : ""} onClick={onClick}>
+                                <CustomLink href="/tentang-kami/syarat">
                                     <a>Syarat dan Ketentuan</a>
                                 </CustomLink>
                             </li>
-                            <li className={router.pathname == "/tentang-kami#privasi" ? styles.bullets : ""}>
-                                <CustomLink href="/tentang-kami#privasi">
+                            <li className={router.pathname == "/tentang-kami/privasi" ? styles.bullets : ""} onClick={onClick}>
+                                <CustomLink href="/tentang-kami/privasi">
                                     <a>Aturan Privasi</a>
                                 </CustomLink>
                             </li>
-                            <li className={router.pathname == "/tentang-kami#disclaimer" ? styles.bullets : ""}>
-                                <CustomLink href="/tentang-kami#disclaimer">
+                            <li className={router.pathname == "/tentang-kami/disclaimer" ? styles.bullets : ""} onClick={onClick}>
+                                <CustomLink href="/tentang-kami/disclaimer">
                                     <a>Disclaimer</a>
                                 </CustomLink>
                             </li>
