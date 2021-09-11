@@ -15,7 +15,7 @@ function Kontak() {
 
                 <h4>Alamat Sekretariat</h4>
                 <p>Sekretariat Himapala Unesa, Gedung P7, Kampus Lidah Wetan Universitas Negeri Surabaya, Lakarsantri, Surabaya, Jawa Timur.</p>
-                <p>Email: hmpl.unesa@gmail.com</p>
+                <p>Email: himapala.unesa@unesa.ac.id</p>
 
                 <div className="socmed-link">
                     <SocmedLists

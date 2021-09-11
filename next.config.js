@@ -32,15 +32,6 @@ module.exports = {
     includePaths: [path.join(__dirname, 'styles')],
     prependData: `@import "_mixins.scss"; @import "_variables.scss";`
   },
-  exportPathMap: function () {
-    return {
-      "/": { page: "/" },
-      "/tentang-kami": { page: "/tentang-kami" },
-      "/blog": { page: "/blog" },
-      "/river-guide": { page: "/river-guide" },
-      "/administrator": { page: "/administrator" },
-    }
-  },
   webpack: (config, { dev }) => {
     config.module.rules = config.module.rules.map(rule => {
       if (rule.loader === 'babel-loader') {
@@ -49,5 +40,21 @@ module.exports = {
       return rule
     })
     return config
+  },
+  exportPathMap: function () {
+    return {
+      "/": { page: "/" },
+      "/tentang-kami": { page: "/tentang-kami" },
+      "/tentang-kami/sejarah": { page: "/tentang-kami/sejarah" },
+      "/tentang-kami/pengurus": { page: "/tentang-kami/pengurus" },
+      "/tentang-kami/kontak": { page: "/tentang-kami/kontak" },
+      "/tentang-kami/rekamjejak": { page: "/tentang-kami/rekamjejak" },
+      "/tentang-kami/syarat": { page: "/tentang-kami/syarat" },
+      "/tentang-kami/privasi": { page: "/tentang-kami/privasi" },
+      "/tentang-kami/disclaimer": { page: "/tentang-kami/disclaimer" },
+      "/blog": { page: "/blog" },
+      "/river-guide": { page: "/river-guide" },
+      "/administrator": { page: "/administrator" },
+    }
   }
 }

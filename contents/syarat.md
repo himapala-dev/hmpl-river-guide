@@ -93,6 +93,6 @@ Dengan terus mengakses atau menggunakan Layanan Kami setelah revisi tersebut men
 # Hubungi Kami
 Jika Anda memiliki pertanyaan tentang Persyaratan ini dan Ketentuan, Anda dapat menghubungi kami:
 
-* Melalui email: hmpl.unesa@gmail.com
+* Melalui email: himapala.unesa@unesa.ac.id
 
 

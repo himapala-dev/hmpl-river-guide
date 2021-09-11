@@ -167,7 +167,7 @@ Anda disarankan untuk meninjau Kebijakan Privasi ini secara berkala untuk setiap
 # Hubungi Kami
 Jika Anda memiliki pertanyaan tentang Kebijakan Privasi ini, Anda dapat menghubungi kami:
 
-* Melalui email: hmpl.unesa@gmail.com
+* Melalui email: himapala.unesa@unesa.ac.id
 
 
 

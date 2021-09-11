@@ -5,6 +5,10 @@
   background-color: $primaryColor;
 }
 
+.h-100 {
+  min-height: 100vh;
+}
+
 // Top Wrapper Hero
 .topWrapper {
   position: absolute;

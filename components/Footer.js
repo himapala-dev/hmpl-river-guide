@@ -15,7 +15,7 @@ function Footer() {
                             <p>Sekretariat Himapala Unesa, Gedung P7, Kampus Lidah Wetan
                                 Universitas Negeri Surabaya
                                 Lakarsantri, Surabaya<br /><br />
-                                hmpl.unesa@gmail.com</p>
+                                himapala.unesa@unesa.ac.id</p>
                         </div>
                         <div>
                             <h4>Tentang Kami</h4>

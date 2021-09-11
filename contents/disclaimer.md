@@ -59,5 +59,5 @@ Organisasi tidak akan bertanggung jawab kepada Anda atau siapa pun atas keputusa
 # Hubungi Kami
 Jika Anda memiliki pertanyaan tentang _Disclaimer_ ini, Anda dapat menghubungi Kami:
 
-* Melalui email: hmpl.unesa@gmail.com
+* Melalui email: himapala.unesa@unesa.ac.id
 

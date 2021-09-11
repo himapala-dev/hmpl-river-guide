@@ -128,7 +128,7 @@ export default function Home() {
             </div>
           </div>
           <div>
-            <CustomLink href="/tentang-kami#kontak">
+            <CustomLink href="/tentang-kami/kontak">
               <a>
                 <button className="btn-secondary">
                   Kontak Kami
