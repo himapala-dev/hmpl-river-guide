@@ -8,4 +8,6 @@ const RiverGuide = () => {
     )
 }
 
+RiverGuide.layout = "guide"
+
 export default RiverGuide

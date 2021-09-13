@@ -5,6 +5,10 @@
   background-color: $primaryColor;
 }
 
+.h-100 {
+  min-height: 100vh;
+}
+
 // Top Wrapper Hero
 .topWrapper {
   position: absolute;
@@ -159,10 +163,14 @@
   }
 }
 
-.sideNavContainer {
+.sticky {
   position: sticky;
   top: 0;
   z-index: 99;
+
+  @include breakpoint(md) {
+    position: relative;
+  }
 }
 
 #docsLayout {
@@ -178,6 +186,40 @@
 
     @include breakpoint(md) {
       position: sticky;
+    }
+  }
+}
+
+.contentBtnContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 35px 0;
+
+  a {
+    margin: 15px 0;
+  }
+
+  @include breakpoint(md) {
+    flex-direction: row;
+    justify-content: flex-end;
+
+    a {
+      margin: 0 15px
+    }
+  }
+}
+
+.socmed-link {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 35px 0;
+
+  img {
+    &:hover {
+      filter: $whiteHoverFilter;
     }
   }
 }

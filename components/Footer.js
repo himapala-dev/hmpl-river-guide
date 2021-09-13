@@ -15,28 +15,28 @@ function Footer() {
                             <p>Sekretariat Himapala Unesa, Gedung P7, Kampus Lidah Wetan
                                 Universitas Negeri Surabaya
                                 Lakarsantri, Surabaya<br /><br />
-                                hmpl.unesa@gmail.com</p>
+                                himapala.unesa@unesa.ac.id</p>
                         </div>
                         <div>
                             <h4>Tentang Kami</h4>
                             <ul>
                                 <li>
-                                    <CustomLink href='/tentang-kami#sejarah'>
+                                    <CustomLink href='/tentang-kami/sejarah'>
                                         <a>Sejarah</a>
                                     </CustomLink>
                                 </li>
                                 <li>
-                                    <CustomLink href='/tentang-kami#pengurus'>
+                                    <CustomLink href='/tentang-kami/pengurus'>
                                         <a>Pengurus</a>
                                     </CustomLink>
                                 </li>
                                 <li>
-                                    <CustomLink href='/tentang-kami#rekamjejak'>
+                                    <CustomLink href='/tentang-kami/rekamjejak'>
                                         <a>Rekam Jejak</a>
                                     </CustomLink>
                                 </li>
                                 <li>
-                                    <CustomLink href='/tentang-kami#kontak'>
+                                    <CustomLink href='/tentang-kami/kontak'>
                                         <a>Kontak Kami</a>
                                     </CustomLink>
                                 </li>
@@ -46,17 +46,17 @@ function Footer() {
                             <h4>Halaman</h4>
                             <ul>
                                 <li>
-                                    <CustomLink href='/tentang-kami#syarat'>
+                                    <CustomLink href='/tentang-kami/syarat'>
                                         <a>Syarat dan Ketentuan</a>
                                     </CustomLink>
                                 </li>
                                 <li>
-                                    <CustomLink href='/tentang-kami#privasi'>
+                                    <CustomLink href='/tentang-kami/privasi'>
                                         <a>Aturan Privasi</a>
                                     </CustomLink>
                                 </li>
                                 <li>
-                                    <CustomLink href='/tentang-kami#disclaimer'>
+                                    <CustomLink href='/tentang-kami/disclaimer'>
                                         <a>Disclaimer</a>
                                     </CustomLink>
                                 </li>
