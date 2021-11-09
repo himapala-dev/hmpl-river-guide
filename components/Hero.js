@@ -1,5 +1,5 @@
 import styles from '../styles/components/Hero.module.scss'
-import Logo from '../public/images/logo.png'
+import { Images } from '../public'
 import SocmedLists from './SocmedLists'
 import CustomLink from './CustomLink'
 import Image from './Image'
@@ -28,7 +28,7 @@ function Hero({ id, title, summary, image, link, button, socmed }) {
                             {image ? (
                                 <div className={styles.heroImg}>
                                     <Image
-                                        src={Logo}
+                                        src={Images.Logo}
                                         alt="hmpl-logo"
                                         width="287"
                                         height="350"

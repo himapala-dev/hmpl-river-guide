@@ -2,7 +2,7 @@ import { useRef } from 'react'
 import CustomLink from './CustomLink'
 import styles from '../styles/components/SideNav.module.scss'
 import Image from './Image'
-import ChevRight from '/public/icons/chevron-right.svg'
+import { Icons } from '../public'
 import useScrollPosition from './UseScrollPosition'
 import { OutsideClick } from './OutsideClick'
 import { useRouter } from 'next/router';
@@ -19,7 +19,7 @@ function SideNav() {
                 <div className={styles.headerSideNav} onClick={onClick}>
                     <h4>Daftar Isi</h4>
                     <Image
-                        src={ChevRight}
+                        src={Icons.ChevronRight}
                         alt="chev-right"
                         width="16"
                         height="16"

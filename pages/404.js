@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import Image from '../components/Image';
 import Navbar from '../components/Navbar';
-import LeftArrow from '/public/icons/arrow-left.svg'
+import { Icons } from '../public';
 
 export default function Custom404() {
     const router = useRouter()
@@ -14,7 +14,7 @@ export default function Custom404() {
                 <p>404 error</p>
                 <button className="btn-secondary center" onClick={() => router.back()}>
                     <Image
-                        src={LeftArrow}
+                        src={Icons.ArrowLeft}
                         alt="left-arrow"
                         sprite="sprite"
                         className="btnImgLeft"

@@ -1,8 +1,4 @@
-import FbImage from '../public/icons/icons8-facebook-f.svg'
-import YtImage from '../public/icons/youtube.svg'
-import IgImage from '../public/icons/icons8-instagram-logo.svg'
-import TwImage from '../public/icons/icons8-twitter.svg'
-import LiImage from '../public/icons/linkedin-svgrepo-com.svg'
+import { Icons } from '../public'
 import Image from './Image'
 
 function SocmedLists({ facebook, instagram, twitter, linkedin, youtube }) {
@@ -11,7 +7,7 @@ function SocmedLists({ facebook, instagram, twitter, linkedin, youtube }) {
             {facebook ? (
                 <a href={facebook} target="_blank" rel="noreferrer">
                     <Image
-                        src={FbImage}
+                        src={Icons.Facebook}
                         alt="fb-icon"
                         width="35"
                         height="35"
@@ -23,7 +19,7 @@ function SocmedLists({ facebook, instagram, twitter, linkedin, youtube }) {
             {youtube ? (
                 <a href={youtube} target="_blank" rel="noreferrer">
                     <Image
-                        src={YtImage}
+                        src={Icons.Youtube}
                         alt="yt-icon"
                         width="35"
                         height="35"
@@ -36,7 +32,7 @@ function SocmedLists({ facebook, instagram, twitter, linkedin, youtube }) {
             {instagram ? (
                 <a href={instagram} target="_blank" rel="noreferrer">
                     <Image
-                        src={IgImage}
+                        src={Icons.Instagram}
                         alt="ig-icon"
                         width="35"
                         height="35"
@@ -48,7 +44,7 @@ function SocmedLists({ facebook, instagram, twitter, linkedin, youtube }) {
             {twitter ? (
                 <a href={twitter} target="_blank" rel="noreferrer">
                     <Image
-                        src={TwImage}
+                        src={Icons.Twitter}
                         alt="twitter-icon"
                         width="35"
                         height="35"
@@ -60,7 +56,7 @@ function SocmedLists({ facebook, instagram, twitter, linkedin, youtube }) {
             {linkedin ? (
                 <a href={linkedin} target="_blank" rel="noreferrer">
                     <Image
-                        src={LiImage}
+                        src={Icons.Linkedin}
                         alt="li-icon"
                         width="35"
                         height="35"

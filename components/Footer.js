@@ -1,6 +1,6 @@
 import ScrollButton from './BackToTop';
 import SocmedLists from './SocmedLists'
-import Logo from '../public/images/logo.png'
+import { Images } from '../public';
 import CustomLink from './CustomLink';
 import Image from './Image';
 
@@ -69,7 +69,7 @@ function Footer() {
                         </div>
                         <div>
                             <Image
-                                src={Logo}
+                                src={Images.Logo}
                                 alt="hmpl-logo"
                                 width="143"
                                 height="175"
