@@ -1,7 +1,7 @@
 import CustomLink from '../../components/CustomLink';
 import Image from '../../components/Image';
 import Meta from '../../components/Meta';
-import LeftArrow from '/public/icons/arrow-left.svg'
+import { Icons } from '../../public';
 
 function Disclaimer() {
     return (
@@ -13,7 +13,7 @@ function Disclaimer() {
                     <CustomLink href="/tentang-kami/privasi">
                         <a><button className="btn-muted">
                             <Image
-                                src={LeftArrow}
+                                src={Icons.ArrowLeft}
                                 alt="left-arrow"
                                 sprite="sprite"
                                 className="btnImgLeft"

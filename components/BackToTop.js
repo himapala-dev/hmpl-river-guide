@@ -1,4 +1,4 @@
-import ChevUp from '/public/icons/chevron-double-up.svg'
+import { Icons } from '../public';
 import { useEffect, useState } from "react";
 import Image from './Image';
 
@@ -34,7 +34,7 @@ export default function ScrollButton() {
             {isVisible && (
                 <a onClick={scrollToTop}>
                     <Image
-                        src={ChevUp}
+                        src={Icons.ChevronDoubleUp}
                         alt="chev-up"
                         width="35"
                         height="35"

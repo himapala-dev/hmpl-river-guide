@@ -2,36 +2,32 @@ import React from 'react'
 import styles from '../styles/components/DivisionCard.module.scss'
 import CustomLink from './CustomLink'
 import Image from './Image'
-import HeroImg from '/public/images/hero-banner.jpg'
-import GhImg from '/public/images/gh.jpg'
-import RcImg from '/public/images/rc.jpg'
-import CavingImg from '/public/images/caving.jpg'
-import DivingImg from '/public/images/diving.jpg'
+import { Images } from '../public'
 
 const divisionData = [{
     title: "Arung Jeram",
     summary: "Siapkan pengarunganmu. Tantang jerammu!",
-    image: HeroImg
+    image: Images.HeroBanner
 },
 {
     title: "Gunung Hutan",
     summary: "Pijakan jejak, gegapkan langkah!",
-    image: GhImg
+    image: Images.Gh
 },
 {
     title: "Panjat Tebing",
     summary: "Berkawan kepal karst dan andesit.",
-    image: RcImg
+    image: Images.Rc
 },
 {
     title: "Susur Gua",
     summary: "Merayap meyelami zona gelap abadi.",
-    image: CavingImg
+    image: Images.CavingImages
 },
 {
     title: "Selam",
     summary: "Sedalam hati laut, diam tak berbatas",
-    image: DivingImg
+    image: Images.Diving
 },
 ]
 

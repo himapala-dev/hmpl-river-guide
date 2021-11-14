@@ -1,7 +1,7 @@
 import Meta from '../components/Meta';
 import CustomLink from '../components/CustomLink';
 import Image from '../components/Image';
-import RightArrow from '/public/icons/arrow-right.svg'
+import { Icons } from '../public';
 
 export default function TentangKami() {
     return (
@@ -24,7 +24,7 @@ export default function TentangKami() {
                         <a><button className="btn-secondary">
                             Selanjutnya
                             <Image
-                                src={RightArrow}
+                                src={Icons.ArrowRight}
                                 alt="right-arrow"
                                 sprite="sprite"
                             /></button></a>
