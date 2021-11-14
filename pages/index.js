@@ -5,10 +5,7 @@ import Footer from '../components/Footer';
 import styles from '../styles/Home.module.scss';
 import dynamic from 'next/dynamic'
 import Loading from '../components/Loading';
-import HeroImage from '/public/images/hero-banner.jpg';
-import Logo from '/public/images/logo.png'
-import MailIcon from '/public/icons/mail.svg'
-import RightArrow from '/public/icons/arrow-right.svg'
+import { Icons, Images } from '../public';
 import Image from '../components/Image';
 import CustomLink from '../components/CustomLink';
 import { useState } from 'react';
@@ -30,7 +27,7 @@ export default function Home() {
       <div className="topWrapper">
         <div className="bgWrapper">
           <Image
-            src={HeroImage}
+            src={Images.HeroBanner}
             alt="img-banner"
           />
         </div>
@@ -107,7 +104,7 @@ export default function Home() {
             <a>
               <button className="btn-secondary center">Lihat Semua
                 <Image
-                  src={RightArrow}
+                  src={Icons.ArrowRight}
                   alt="right-arrow"
                   sprite="sprite"
                 />
@@ -133,7 +130,7 @@ export default function Home() {
                 <button className="btn-secondary">
                   Kontak Kami
                   <Image
-                    src={MailIcon}
+                    src={Icons.Mail}
                     alt="mail"
                     sprite="sprite"
                   />

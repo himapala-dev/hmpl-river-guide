@@ -1,6 +1,5 @@
 import CustomLink from '../../components/CustomLink'
-import LeftArrow from '/public/icons/arrow-left.svg'
-import RightArrow from '/public/icons/arrow-right.svg'
+import { Icons } from '../../public'
 import Image from '../../components/Image'
 import Meta from '../../components/Meta'
 import SocmedLists from '../../components/SocmedLists'
@@ -31,7 +30,7 @@ function Kontak() {
                     <CustomLink href="/tentang-kami/rekamjejak">
                         <a><button className="btn-muted">
                             <Image
-                                src={LeftArrow}
+                                src={Icons.ArrowLeft}
                                 alt="left-arrow"
                                 sprite="sprite"
                                 className="btnImgLeft"
@@ -43,7 +42,7 @@ function Kontak() {
                         <a><button className="btn-secondary">
                             Selanjutnya
                             <Image
-                                src={RightArrow}
+                                src={Icons.ArrowRight}
                                 alt="right-arrow"
                                 sprite="sprite"
                             /></button></a>

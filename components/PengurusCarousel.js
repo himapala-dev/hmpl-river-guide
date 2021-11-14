@@ -3,17 +3,15 @@ import Slider from "react-slick";
 import styles from "../styles/components/Carousel.module.scss"
 import SocmedLists from "./SocmedLists";
 import Loading from "./Loading";
-import ChevRight from '/public/icons/chevron-right.svg'
-import ChevLeft from '/public/icons/chevron-left.svg'
+import { Icons, Images } from "../public";
 import Image from "./Image";
-import CarouselImg from '/public/images/example-picture.jpeg'
 
 function NextArrow(props) {
     const { onClick } = props;
     return (
         <div className="nextArrow" onClick={onClick}>
             <Image
-                src={ChevRight}
+                src={Icons.ChevronRight}
                 alt="chev-right"
                 width="48"
                 height="48"
@@ -28,7 +26,7 @@ function PrevArrow(props) {
     return (
         <div className="prevArrow" onClick={onClick}>
             <Image
-                src={ChevLeft}
+                src={Icons.ChevronLeft}
                 alt="chev-left"
                 width="48"
                 height="48"
@@ -41,7 +39,7 @@ function PrevArrow(props) {
 const pengurusData = Array(20).fill({
     name: "Trio Adi Saputra",
     title: "Ketua Umum",
-    src: CarouselImg,
+    src: Images.Example,
     socmed: {
         facebook: "https://www.facebook.com/himapala.unesa",
         instagram: "https://www.instagram.com/himapala.unesa/",
