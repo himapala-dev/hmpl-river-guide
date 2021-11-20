@@ -2,6 +2,7 @@ import Meta from '../components/Meta';
 import CustomLink from '../components/CustomLink';
 import Image from '../components/Image';
 import { Icons } from '../public';
+import Buttons from '../components/Button';
 
 export default function TentangKami() {
     return (
@@ -21,13 +22,15 @@ export default function TentangKami() {
 
                 <div className="contentBtnContainer">
                     <CustomLink href="/tentang-kami/sejarah">
-                        <a><button className="btn-secondary">
-                            Selanjutnya
-                            <Image
-                                src={Icons.ArrowRight}
-                                alt="right-arrow"
-                                sprite="sprite"
-                            /></button></a>
+                        <a>
+                            <Buttons className="btn-secondary" title="Selanjutnya">
+                                <Image
+                                    src={Icons.ArrowRight}
+                                    alt="right-arrow"
+                                    sprite="sprite"
+                                />
+                            </Buttons>
+                        </a>
                     </CustomLink>
                 </div>
             </div>

@@ -9,6 +9,7 @@ import { Icons, Images } from '../public';
 import Image from '../components/Image';
 import CustomLink from '../components/CustomLink';
 import { useState } from 'react';
+import Buttons from '../components/Button';
 
 const DivisionCard = dynamic(() => import("../components/DivisionCard"), { loading: () => <Loading loading={true} /> })
 const BlogCard = dynamic(() => import("../components/BlogCard"), { loading: () => <Loading loading={true} /> })
@@ -75,7 +76,9 @@ export default function Home() {
           <h1>XPDC 1000 KM Sungai Indonesia</h1>
           <p>Mimpi Himapala untuk Indonesia. Proyek 1000 km bertajuk basis data arung jeram. Eksplor pengarunganmu disini!!</p>
           <CustomLink href="/river-guide">
-            <a><button className="btn-primary">RIVER GUIDE</button></a>
+            <a>
+              <Buttons className="btn-primary" title="RIVER GUIDE" /> 
+            </a>
           </CustomLink>
         </div>
       </section>
@@ -102,13 +105,12 @@ export default function Home() {
           </div>
           <CustomLink href="/blog">
             <a>
-              <button className="btn-secondary center">Lihat Semua
-                <Image
-                  src={Icons.ArrowRight}
-                  alt="right-arrow"
-                  sprite="sprite"
-                />
-              </button>
+              <Buttons 
+                className="btn-secondary center"
+                title="Lihat Semua"
+              >
+                <Image src={Icons.ArrowRight} alt="right-arrow" sprite="sprite" />
+              </Buttons>
             </a>
           </CustomLink>
         </div>
@@ -127,14 +129,16 @@ export default function Home() {
           <div>
             <CustomLink href="/tentang-kami/kontak">
               <a>
-                <button className="btn-secondary">
-                  Kontak Kami
-                  <Image
+              <Buttons 
+                className="btn-secondary"
+                title="Kontak Kami"
+              >
+                <Image
                     src={Icons.Mail}
                     alt="mail"
                     sprite="sprite"
                   />
-                </button>
+              </Buttons>
               </a>
             </CustomLink>
           </div>
