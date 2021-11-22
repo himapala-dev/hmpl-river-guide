@@ -1,5 +1,6 @@
 import styles from '../styles/components/BlogCard.module.scss'
 import CustomLink from './CustomLink'
+import Buttons from './Button'
 
 function BlogCard({ src, title, summary, button, href }) {
     return (
@@ -9,7 +10,7 @@ function BlogCard({ src, title, summary, button, href }) {
                     <a>
                         <div className={styles.cardImg}>
                             <img src={src} alt="card-img" className="cover" />
-                            <button className="outline">Baca Artikel</button>
+                            <Buttons className="outline" title="Baca Artikel" />
                         </div>
                         <div className={styles.cardBody}>
                             <h4>{title}</h4>

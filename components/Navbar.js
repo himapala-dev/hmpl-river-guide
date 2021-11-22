@@ -4,6 +4,7 @@ import { OutsideClick } from './OutsideClick';
 import { useRouter } from 'next/dist/client/router';
 import useScrollPosition from './UseScrollPosition';
 import CustomLink from './CustomLink';
+import Buttons from './Button';
 
 function Navbar() {
     const toggleRef = useRef(null);
@@ -53,7 +54,9 @@ function Navbar() {
                         </li>
                         <li>
                             <CustomLink href="/river-guide">
-                                <a><button className="btn-primary center">RIVER GUIDE</button></a>
+                                <a>
+                                    <Buttons className="btn-primary center" title="RIVER GUIDE"/>
+                                </a>
                             </CustomLink>
                         </li>
                     </ul>

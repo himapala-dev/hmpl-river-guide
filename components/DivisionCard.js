@@ -3,6 +3,7 @@ import styles from '../styles/components/DivisionCard.module.scss'
 import CustomLink from './CustomLink'
 import Image from './Image'
 import { Images } from '../public'
+import Buttons from './Button'
 
 const divisionData = [{
     title: "Arung Jeram",
@@ -53,7 +54,7 @@ function DivisionCard() {
                                         {e.title == "Arung Jeram" ? (
                                             <CustomLink href="/river-guide">
                                                 <a>
-                                                    <button className="btn-primary center">RIVER GUIDE</button>
+                                                    <Buttons className="btn-primary center" title="RIVER GUIDE" />
                                                 </a>
                                             </CustomLink>
                                         ) : ""}
