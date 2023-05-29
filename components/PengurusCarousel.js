@@ -37,7 +37,7 @@ function PrevArrow(props) {
 }
 
 const pengurusData = Array(20).fill({
-    name: "Trio Adi Saputra",
+    name: "Vina Nabila",
     title: "Ketua Umum",
     src: Images.Example,
     socmed: {
